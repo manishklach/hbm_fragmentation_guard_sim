@@ -23,8 +23,10 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 
 # Compare confidence vs LRU under demand paging
-.\.venv\Scripts\python.exe .un_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy confidence --miss-mode demand
-.\.venv\Scripts\python.exe .un_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy lru --miss-mode demand
+.\.venv\Scripts\python.exe .
+un_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy confidence --miss-mode demand
+.\.venv\Scripts\python.exe .
+un_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy lru --miss-mode demand
 ```
 
 ### macOS / Linux
@@ -133,3 +135,28 @@ See: `traces/schema.json` and `docs/TRACE_FORMAT.md`.
 
 ## License
 MIT (see `LICENSE`).
+
+---
+
+## Visualizer (website/demo friendly)
+
+```bash
+python tools/visualize_fragmentation.py --trace traces/fragmentation_stressor.jsonl --out out_fragmentation.png
+```
+
+---
+
+## Telemetry mocks / workloads
+
+```bash
+python run_sim.py --trace workloads/llama3_70b_inference_mock.jsonl --policy confidence --miss-mode demand
+```
+
+---
+
+## CI (GitHub Actions)
+A minimal CI workflow is included at `.github/workflows/test.yml`.
+
+
+## Disclaimer
+See `DISCLAIMER.md`.

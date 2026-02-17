@@ -1,0 +1,1 @@
+# Workloads\n\nSynthetic JSONL traces resembling LLM memory behaviors.\n\n- llama3_70b_inference_mock.jsonl: prefill + decode + KV hot window + safe windows.\n
