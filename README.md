@@ -1,4 +1,4 @@
-# HBM Fragmentation Guard — Reference Control Simulator (v3.1)
+# HBM Fragmentation Guard — Reference Control Simulator (v3.2)
 
 A **reference simulator + benchmark harness** for evaluating HBM residency-control policies and fragmentation behavior.
 It is intentionally hardware-agnostic: no proprietary hooks required.
@@ -12,8 +12,8 @@ This repo models:
 - trace-driven “LLM-style” workload mocks
 
 > **What it is not:** a device microcode implementation. It’s a policy simulator for reproducible evaluation.
->
-> ## Disclaimer
+
+## Disclaimer
 This repository is provided for research and evaluation purposes only. It is **not production software** and is provided **“AS IS”** without warranties of any kind (including fitness for a particular purpose, accuracy, or non-infringement).  
 No endorsement or affiliation with any HBM/GPU vendor is implied.  
 This software license does **not** grant rights to any patents.
