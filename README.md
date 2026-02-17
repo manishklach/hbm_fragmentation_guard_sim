@@ -12,6 +12,12 @@ This repo models:
 - trace-driven “LLM-style” workload mocks
 
 > **What it is not:** a device microcode implementation. It’s a policy simulator for reproducible evaluation.
+>
+> ## Disclaimer
+This repository is provided for research and evaluation purposes only. It is **not production software** and is provided **“AS IS”** without warranties of any kind (including fitness for a particular purpose, accuracy, or non-infringement).  
+No endorsement or affiliation with any HBM/GPU vendor is implied.  
+This software license does **not** grant rights to any patents.
+
 
 ---
 
@@ -33,9 +39,9 @@ python -m venv .venv
 
 # Compare confidence vs LRU under demand paging
 .\.venv\Scripts\python.exe .
-un_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy confidence --miss-mode demand
+run_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy confidence --miss-mode demand
 .\.venv\Scripts\python.exe .
-un_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy lru --miss-mode demand
+run_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy lru --miss-mode demand
 ```
 
 ### macOS / Linux
@@ -60,7 +66,7 @@ python bench.py
 
 On Windows PowerShell (without activation):
 ```powershell
-.\.venv\Scripts\python.exe .ench.py
+.\.venv\Scripts\python.exe bench.py
 ```
 
 ---
