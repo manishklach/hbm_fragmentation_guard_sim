@@ -15,6 +15,13 @@ This repo models:
 
 ---
 
+## Try It Now
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe .\bench.py
+
+
 ## Quickstart
 
 ### Windows PowerShell
@@ -23,8 +30,10 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 
 # Compare confidence vs LRU under demand paging
-.\.venv\Scripts\python.exe .un_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy confidence --miss-mode demand
-.\.venv\Scripts\python.exe .un_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy lru --miss-mode demand
+.\.venv\Scripts\python.exe .
+un_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy confidence --miss-mode demand
+.\.venv\Scripts\python.exe .
+un_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy lru --miss-mode demand
 ```
 
 ### macOS / Linux
