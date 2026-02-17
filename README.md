@@ -13,6 +13,8 @@ This repo models:
 
 > **What it is not:** a device microcode implementation. It’s a policy simulator for reproducible evaluation.
 
+**Patent:** Patent application filed (India). *Patent pending.*
+
 ## Disclaimer
 This repository is provided for research and evaluation purposes only. It is **not production software** and is provided **“AS IS”** without warranties of any kind (including fitness for a particular purpose, accuracy, or non-infringement).  
 No endorsement or affiliation with any HBM/GPU vendor is implied.  
