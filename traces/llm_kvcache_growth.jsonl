@@ -1,0 +1,87 @@
+{"t": 0, "event": "alloc", "id": "param_0", "size": 40}
+{"t": 1, "event": "alloc", "id": "param_1", "size": 40}
+{"t": 2, "event": "alloc", "id": "param_2", "size": 40}
+{"t": 3, "event": "alloc", "id": "param_3", "size": 40}
+{"t": 4, "event": "alloc", "id": "param_4", "size": 40}
+{"t": 5, "event": "alloc", "id": "param_5", "size": 40}
+{"t": 6, "event": "alloc", "id": "param_6", "size": 40}
+{"t": 7, "event": "alloc", "id": "param_7", "size": 40}
+{"t": 8, "event": "safe_window", "phase": "warmup"}
+{"t": 9, "event": "touch", "id": "param_0", "mu": 0.8823832764833162, "sigma": 0.0875424586962251, "phase": "train_step"}
+{"t": 10, "event": "alloc", "id": "kv_0", "size": 25}
+{"t": 11, "event": "touch", "id": "kv_0", "mu": 0.8301868946079707, "sigma": 0.12434617720005256, "phase": "kv_use"}
+{"t": 12, "event": "touch", "id": "param_1", "mu": 0.9035882004306689, "sigma": 0.09828444584562929, "phase": "train_step"}
+{"t": 13, "event": "alloc", "id": "kv_1", "size": 25}
+{"t": 14, "event": "touch", "id": "kv_1", "mu": 0.7115997849549414, "sigma": 0.15044614399136522, "phase": "kv_use"}
+{"t": 15, "event": "touch", "id": "param_2", "mu": 0.8537495658441985, "sigma": 0.1016822841831193, "phase": "train_step"}
+{"t": 16, "event": "alloc", "id": "kv_2", "size": 25}
+{"t": 17, "event": "touch", "id": "kv_2", "mu": 0.7139710847149238, "sigma": 0.1254427808006319, "phase": "kv_use"}
+{"t": 18, "event": "touch", "id": "param_3", "mu": 0.8924519189142514, "sigma": 0.12134260623360191, "phase": "train_step"}
+{"t": 19, "event": "alloc", "id": "kv_3", "size": 25}
+{"t": 20, "event": "touch", "id": "kv_3", "mu": 0.724760392229929, "sigma": 0.13339433787642085, "phase": "kv_use"}
+{"t": 21, "event": "touch", "id": "param_4", "mu": 0.9127433222405589, "sigma": 0.12738544712285027, "phase": "train_step"}
+{"t": 22, "event": "alloc", "id": "kv_4", "size": 25}
+{"t": 23, "event": "touch", "id": "kv_4", "mu": 0.8154205897234997, "sigma": 0.1438008284790468, "phase": "kv_use"}
+{"t": 24, "event": "safe_window", "phase": "microbatch_boundary"}
+{"t": 25, "event": "touch", "id": "param_5", "mu": 0.947625510559292, "sigma": 0.08232913403088782, "phase": "train_step"}
+{"t": 26, "event": "alloc", "id": "kv_5", "size": 25}
+{"t": 27, "event": "touch", "id": "kv_5", "mu": 0.8716936918097359, "sigma": 0.13737655717990058, "phase": "kv_use"}
+{"t": 28, "event": "touch", "id": "param_6", "mu": 0.8644255083357437, "sigma": 0.08588961190391842, "phase": "train_step"}
+{"t": 29, "event": "alloc", "id": "kv_6", "size": 25}
+{"t": 30, "event": "touch", "id": "kv_6", "mu": 0.7616963648203868, "sigma": 0.16896758154720187, "phase": "kv_use"}
+{"t": 31, "event": "touch", "id": "param_7", "mu": 0.8680726379923938, "sigma": 0.10908000818312331, "phase": "train_step"}
+{"t": 32, "event": "alloc", "id": "kv_7", "size": 25}
+{"t": 33, "event": "touch", "id": "kv_7", "mu": 0.8277826937852368, "sigma": 0.14234385256354387, "phase": "kv_use"}
+{"t": 34, "event": "touch", "id": "param_0", "mu": 0.9047744465709557, "sigma": 0.08313944874866616, "phase": "train_step"}
+{"t": 35, "event": "alloc", "id": "kv_8", "size": 25}
+{"t": 36, "event": "touch", "id": "kv_8", "mu": 0.7119202339932464, "sigma": 0.13235752276915957, "phase": "kv_use"}
+{"t": 37, "event": "touch", "id": "param_1", "mu": 0.9180399973181785, "sigma": 0.10137961528347014, "phase": "train_step"}
+{"t": 38, "event": "alloc", "id": "kv_9", "size": 25}
+{"t": 39, "event": "touch", "id": "kv_9", "mu": 0.7628294340753583, "sigma": 0.15513371181045832, "phase": "kv_use"}
+{"t": 40, "event": "safe_window", "phase": "microbatch_boundary"}
+{"t": 41, "event": "touch", "id": "param_2", "mu": 0.8953184376370775, "sigma": 0.09498834984318412, "phase": "train_step"}
+{"t": 42, "event": "alloc", "id": "kv_10", "size": 25}
+{"t": 43, "event": "touch", "id": "kv_10", "mu": 0.8588758963044982, "sigma": 0.16193966602377427, "phase": "kv_use"}
+{"t": 44, "event": "touch", "id": "param_3", "mu": 0.8744096510722152, "sigma": 0.10872118551293355, "phase": "train_step"}
+{"t": 45, "event": "alloc", "id": "kv_11", "size": 25}
+{"t": 46, "event": "touch", "id": "kv_11", "mu": 0.8050393007622902, "sigma": 0.17250824973440573, "phase": "kv_use"}
+{"t": 47, "event": "touch", "id": "param_4", "mu": 0.9229445289439218, "sigma": 0.09439688824450933, "phase": "train_step"}
+{"t": 48, "event": "alloc", "id": "kv_12", "size": 25}
+{"t": 49, "event": "touch", "id": "kv_12", "mu": 0.8960349694985164, "sigma": 0.1270839466952977, "phase": "kv_use"}
+{"t": 50, "event": "touch", "id": "param_5", "mu": 0.8918122821785227, "sigma": 0.11785704647826248, "phase": "train_step"}
+{"t": 51, "event": "alloc", "id": "kv_13", "size": 25}
+{"t": 52, "event": "touch", "id": "kv_13", "mu": 0.7303969069321009, "sigma": 0.14933778602854833, "phase": "kv_use"}
+{"t": 53, "event": "touch", "id": "param_6", "mu": 0.8539207257047438, "sigma": 0.11341079282671976, "phase": "train_step"}
+{"t": 54, "event": "alloc", "id": "kv_14", "size": 25}
+{"t": 55, "event": "touch", "id": "kv_14", "mu": 0.8529141732425626, "sigma": 0.15438155641664303, "phase": "kv_use"}
+{"t": 56, "event": "safe_window", "phase": "microbatch_boundary"}
+{"t": 57, "event": "touch", "id": "param_7", "mu": 0.9375477811830888, "sigma": 0.09568737564240484, "phase": "train_step"}
+{"t": 58, "event": "alloc", "id": "kv_15", "size": 25}
+{"t": 59, "event": "touch", "id": "kv_15", "mu": 0.8390590732547318, "sigma": 0.1556621926263011, "phase": "kv_use"}
+{"t": 60, "event": "touch", "id": "param_0", "mu": 0.9079895204282492, "sigma": 0.10281026656507065, "phase": "train_step"}
+{"t": 61, "event": "alloc", "id": "kv_16", "size": 25}
+{"t": 62, "event": "touch", "id": "kv_16", "mu": 0.8679935561025083, "sigma": 0.17668086570647623, "phase": "kv_use"}
+{"t": 63, "event": "touch", "id": "param_1", "mu": 0.8974098337419645, "sigma": 0.11320761027373372, "phase": "train_step"}
+{"t": 64, "event": "alloc", "id": "kv_17", "size": 25}
+{"t": 65, "event": "touch", "id": "kv_17", "mu": 0.7121338855194439, "sigma": 0.16208952127826542, "phase": "kv_use"}
+{"t": 66, "event": "touch", "id": "param_2", "mu": 0.9147128854527669, "sigma": 0.1296547969733317, "phase": "train_step"}
+{"t": 67, "event": "alloc", "id": "kv_18", "size": 25}
+{"t": 68, "event": "touch", "id": "kv_18", "mu": 0.864384957321943, "sigma": 0.13707573192564895, "phase": "kv_use"}
+{"t": 69, "event": "touch", "id": "param_3", "mu": 0.8885791442446711, "sigma": 0.11343263579420941, "phase": "train_step"}
+{"t": 70, "event": "alloc", "id": "kv_19", "size": 25}
+{"t": 71, "event": "touch", "id": "kv_19", "mu": 0.7045125856111176, "sigma": 0.14770171717798594, "phase": "kv_use"}
+{"t": 72, "event": "safe_window", "phase": "microbatch_boundary"}
+{"t": 73, "event": "free", "id": "kv_0"}
+{"t": 74, "event": "safe_window", "phase": "cleanup_boundary"}
+{"t": 75, "event": "free", "id": "kv_2"}
+{"t": 76, "event": "free", "id": "kv_4"}
+{"t": 77, "event": "free", "id": "kv_6"}
+{"t": 78, "event": "safe_window", "phase": "cleanup_boundary"}
+{"t": 79, "event": "free", "id": "kv_8"}
+{"t": 80, "event": "free", "id": "kv_10"}
+{"t": 81, "event": "free", "id": "kv_12"}
+{"t": 82, "event": "safe_window", "phase": "cleanup_boundary"}
+{"t": 83, "event": "free", "id": "kv_14"}
+{"t": 84, "event": "free", "id": "kv_16"}
+{"t": 85, "event": "free", "id": "kv_18"}
+{"t": 86, "event": "safe_window", "phase": "cleanup_boundary"}

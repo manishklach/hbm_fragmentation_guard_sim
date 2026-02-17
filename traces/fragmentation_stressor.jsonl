@@ -1,0 +1,84 @@
+{"t": 0, "event": "alloc", "id": "obj_0", "size": 10}
+{"t": 1, "event": "alloc", "id": "obj_1", "size": 40}
+{"t": 2, "event": "alloc", "id": "obj_2", "size": 14}
+{"t": 3, "event": "alloc", "id": "obj_3", "size": 35}
+{"t": 4, "event": "alloc", "id": "obj_4", "size": 10}
+{"t": 5, "event": "alloc", "id": "obj_5", "size": 45}
+{"t": 6, "event": "alloc", "id": "obj_6", "size": 14}
+{"t": 7, "event": "alloc", "id": "obj_7", "size": 40}
+{"t": 8, "event": "alloc", "id": "obj_8", "size": 10}
+{"t": 9, "event": "alloc", "id": "obj_9", "size": 35}
+{"t": 10, "event": "alloc", "id": "obj_10", "size": 14}
+{"t": 11, "event": "alloc", "id": "obj_11", "size": 45}
+{"t": 12, "event": "alloc", "id": "obj_12", "size": 10}
+{"t": 13, "event": "alloc", "id": "obj_13", "size": 40}
+{"t": 14, "event": "alloc", "id": "obj_14", "size": 14}
+{"t": 15, "event": "alloc", "id": "obj_15", "size": 35}
+{"t": 16, "event": "alloc", "id": "obj_16", "size": 10}
+{"t": 17, "event": "alloc", "id": "obj_17", "size": 45}
+{"t": 18, "event": "alloc", "id": "obj_18", "size": 14}
+{"t": 19, "event": "alloc", "id": "obj_19", "size": 40}
+{"t": 20, "event": "alloc", "id": "obj_20", "size": 10}
+{"t": 21, "event": "alloc", "id": "obj_21", "size": 35}
+{"t": 22, "event": "alloc", "id": "obj_22", "size": 14}
+{"t": 23, "event": "alloc", "id": "obj_23", "size": 45}
+{"t": 24, "event": "alloc", "id": "obj_24", "size": 10}
+{"t": 25, "event": "alloc", "id": "obj_25", "size": 40}
+{"t": 26, "event": "alloc", "id": "obj_26", "size": 14}
+{"t": 27, "event": "alloc", "id": "obj_27", "size": 35}
+{"t": 28, "event": "alloc", "id": "obj_28", "size": 10}
+{"t": 29, "event": "alloc", "id": "obj_29", "size": 45}
+{"t": 30, "event": "safe_window", "phase": "after_catalog"}
+{"t": 31, "event": "touch", "id": "obj_0", "mu": 0.822618977675491, "sigma": 0.13358634316482976, "phase": "fill"}
+{"t": 32, "event": "touch", "id": "obj_1", "mu": 0.5962105292011866, "sigma": 0.12793900420598642, "phase": "fill"}
+{"t": 33, "event": "touch", "id": "obj_2", "mu": 0.5753920636531136, "sigma": 0.13524308973099383, "phase": "fill"}
+{"t": 34, "event": "touch", "id": "obj_3", "mu": 0.8092330171927439, "sigma": 0.13071451834250833, "phase": "fill"}
+{"t": 35, "event": "touch", "id": "obj_4", "mu": 0.5814941360108401, "sigma": 0.14757861235119715, "phase": "fill"}
+{"t": 36, "event": "safe_window", "phase": "fill_boundary"}
+{"t": 37, "event": "touch", "id": "obj_5", "mu": 0.554706172811461, "sigma": 0.11820407575747154, "phase": "fill"}
+{"t": 38, "event": "touch", "id": "obj_6", "mu": 0.804533526874592, "sigma": 0.14857867206203065, "phase": "fill"}
+{"t": 39, "event": "touch", "id": "obj_7", "mu": 0.584671924127062, "sigma": 0.10251282018219077, "phase": "fill"}
+{"t": 40, "event": "touch", "id": "obj_8", "mu": 0.599109671039939, "sigma": 0.15788546686753402, "phase": "fill"}
+{"t": 41, "event": "touch", "id": "obj_9", "mu": 0.832696126676692, "sigma": 0.13693376227471427, "phase": "fill"}
+{"t": 42, "event": "safe_window", "phase": "fill_boundary"}
+{"t": 43, "event": "touch", "id": "obj_10", "mu": 0.5578747047570082, "sigma": 0.1009000442169763, "phase": "fill"}
+{"t": 44, "event": "touch", "id": "obj_11", "mu": 0.576419063308524, "sigma": 0.1035730663101313, "phase": "fill"}
+{"t": 45, "event": "touch", "id": "obj_12", "mu": 0.8095104131398965, "sigma": 0.1145165808199129, "phase": "fill"}
+{"t": 46, "event": "touch", "id": "obj_13", "mu": 0.5515041294612395, "sigma": 0.12783606767339709, "phase": "fill"}
+{"t": 47, "event": "touch", "id": "obj_14", "mu": 0.5720265558328329, "sigma": 0.1505456277111119, "phase": "fill"}
+{"t": 48, "event": "safe_window", "phase": "fill_boundary"}
+{"t": 49, "event": "touch", "id": "obj_15", "mu": 0.8259562057382038, "sigma": 0.13841750247515064, "phase": "fill"}
+{"t": 50, "event": "touch", "id": "obj_16", "mu": 0.5749886576103396, "sigma": 0.13974697191342209, "phase": "fill"}
+{"t": 51, "event": "touch", "id": "obj_17", "mu": 0.5728664940799779, "sigma": 0.11668977397983316, "phase": "fill"}
+{"t": 52, "event": "touch", "id": "obj_18", "mu": 0.8498828100231542, "sigma": 0.15974149849937197, "phase": "fill"}
+{"t": 53, "event": "touch", "id": "obj_19", "mu": 0.5920107774746431, "sigma": 0.14246857728987697, "phase": "fill"}
+{"t": 54, "event": "safe_window", "phase": "fill_boundary"}
+{"t": 55, "event": "free", "id": "obj_0"}
+{"t": 56, "event": "safe_window", "phase": "free_boundary"}
+{"t": 57, "event": "free", "id": "obj_2"}
+{"t": 58, "event": "free", "id": "obj_4"}
+{"t": 59, "event": "free", "id": "obj_6"}
+{"t": 60, "event": "safe_window", "phase": "free_boundary"}
+{"t": 61, "event": "free", "id": "obj_8"}
+{"t": 62, "event": "free", "id": "obj_10"}
+{"t": 63, "event": "free", "id": "obj_12"}
+{"t": 64, "event": "safe_window", "phase": "free_boundary"}
+{"t": 65, "event": "free", "id": "obj_14"}
+{"t": 66, "event": "free", "id": "obj_16"}
+{"t": 67, "event": "free", "id": "obj_18"}
+{"t": 68, "event": "safe_window", "phase": "free_boundary"}
+{"t": 69, "event": "alloc", "id": "big_request", "size": 120}
+{"t": 70, "event": "touch", "id": "big_request", "mu": 0.92, "sigma": 0.05, "phase": "big_alloc"}
+{"t": 71, "event": "safe_window", "phase": "before_compact"}
+{"t": 72, "event": "touch", "id": "obj_0", "mu": 0.781527721701555, "sigma": 0.10148329508039527, "phase": "post"}
+{"t": 73, "event": "touch", "id": "obj_3", "mu": 0.7789039947314202, "sigma": 0.0935111749779963, "phase": "post"}
+{"t": 74, "event": "touch", "id": "obj_6", "mu": 0.8266287886410407, "sigma": 0.11001999024592454, "phase": "post"}
+{"t": 75, "event": "touch", "id": "obj_9", "mu": 0.8346583621881178, "sigma": 0.10932567658529672, "phase": "post"}
+{"t": 76, "event": "safe_window", "phase": "post_boundary"}
+{"t": 77, "event": "touch", "id": "obj_12", "mu": 0.8458042383319814, "sigma": 0.13236548866514022, "phase": "post"}
+{"t": 78, "event": "touch", "id": "obj_15", "mu": 0.7500544937055571, "sigma": 0.10048587073648055, "phase": "post"}
+{"t": 79, "event": "touch", "id": "obj_18", "mu": 0.8410271928104182, "sigma": 0.11349936380068332, "phase": "post"}
+{"t": 80, "event": "touch", "id": "obj_1", "mu": 0.8480358941174292, "sigma": 0.10987121940396405, "phase": "post"}
+{"t": 81, "event": "safe_window", "phase": "post_boundary"}
+{"t": 82, "event": "touch", "id": "obj_4", "mu": 0.7573038343833698, "sigma": 0.12147274561170121, "phase": "post"}
+{"t": 83, "event": "touch", "id": "obj_7", "mu": 0.8278510858676651, "sigma": 0.10348877934250714, "phase": "post"}

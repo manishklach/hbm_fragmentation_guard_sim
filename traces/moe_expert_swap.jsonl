@@ -1,0 +1,68 @@
+{"t": 0, "event": "alloc", "id": "expert_0", "size": 30}
+{"t": 1, "event": "alloc", "id": "expert_1", "size": 30}
+{"t": 2, "event": "alloc", "id": "expert_2", "size": 30}
+{"t": 3, "event": "alloc", "id": "expert_3", "size": 30}
+{"t": 4, "event": "alloc", "id": "expert_4", "size": 30}
+{"t": 5, "event": "alloc", "id": "expert_5", "size": 30}
+{"t": 6, "event": "alloc", "id": "expert_6", "size": 30}
+{"t": 7, "event": "alloc", "id": "expert_7", "size": 30}
+{"t": 8, "event": "alloc", "id": "expert_8", "size": 30}
+{"t": 9, "event": "alloc", "id": "expert_9", "size": 30}
+{"t": 10, "event": "alloc", "id": "expert_10", "size": 30}
+{"t": 11, "event": "alloc", "id": "expert_11", "size": 30}
+{"t": 12, "event": "safe_window", "phase": "init"}
+{"t": 13, "event": "touch", "id": "expert_0", "mu": 0.6870405886252018, "sigma": 0.12986495451160338, "phase": "route"}
+{"t": 14, "event": "touch", "id": "expert_1", "mu": 0.6610831530011564, "sigma": 0.1693249479989073, "phase": "route"}
+{"t": 15, "event": "touch", "id": "expert_2", "mu": 0.6505148043264899, "sigma": 0.14022256640417669, "phase": "route"}
+{"t": 16, "event": "free", "id": "expert_2"}
+{"t": 17, "event": "alloc", "id": "expert_2", "size": 30}
+{"t": 18, "event": "touch", "id": "expert_3", "mu": 0.721863837602555, "sigma": 0.10646517177464009, "phase": "route"}
+{"t": 19, "event": "touch", "id": "expert_4", "mu": 0.2943416374542629, "sigma": 0.1493320034146895, "phase": "route"}
+{"t": 20, "event": "touch", "id": "expert_5", "mu": 0.2532716612387849, "sigma": 0.13032156835163486, "phase": "route"}
+{"t": 21, "event": "free", "id": "expert_11"}
+{"t": 22, "event": "alloc", "id": "expert_11", "size": 30}
+{"t": 23, "event": "safe_window", "phase": "router_barrier"}
+{"t": 24, "event": "touch", "id": "expert_6", "mu": 0.30627843138349975, "sigma": 0.13616167363600207, "phase": "route"}
+{"t": 25, "event": "touch", "id": "expert_7", "mu": 0.3080052294865767, "sigma": 0.11257257292773007, "phase": "route"}
+{"t": 26, "event": "touch", "id": "expert_8", "mu": 0.26904097619732265, "sigma": 0.10887580223824118, "phase": "route"}
+{"t": 27, "event": "free", "id": "expert_8"}
+{"t": 28, "event": "alloc", "id": "expert_8", "size": 30}
+{"t": 29, "event": "touch", "id": "expert_9", "mu": 0.2905015241335186, "sigma": 0.17390638291298366, "phase": "route"}
+{"t": 30, "event": "touch", "id": "expert_10", "mu": 0.297234276570873, "sigma": 0.1619367573788409, "phase": "route"}
+{"t": 31, "event": "touch", "id": "expert_11", "mu": 0.2806931875882119, "sigma": 0.1596876173539543, "phase": "route"}
+{"t": 32, "event": "free", "id": "expert_5"}
+{"t": 33, "event": "alloc", "id": "expert_5", "size": 30}
+{"t": 34, "event": "safe_window", "phase": "router_barrier"}
+{"t": 35, "event": "touch", "id": "expert_0", "mu": 0.6581335550063583, "sigma": 0.12329424631891257, "phase": "route"}
+{"t": 36, "event": "touch", "id": "expert_1", "mu": 0.7039388801004297, "sigma": 0.1580565081793044, "phase": "route"}
+{"t": 37, "event": "touch", "id": "expert_2", "mu": 0.6837404316005564, "sigma": 0.10701699064527764, "phase": "route"}
+{"t": 38, "event": "free", "id": "expert_2"}
+{"t": 39, "event": "alloc", "id": "expert_2", "size": 30}
+{"t": 40, "event": "touch", "id": "expert_3", "mu": 0.6713386856981393, "sigma": 0.11679121041091854, "phase": "route"}
+{"t": 41, "event": "touch", "id": "expert_4", "mu": 0.2724947532067655, "sigma": 0.16476085605811758, "phase": "route"}
+{"t": 42, "event": "touch", "id": "expert_5", "mu": 0.2659586576871876, "sigma": 0.1709119784863422, "phase": "route"}
+{"t": 43, "event": "free", "id": "expert_11"}
+{"t": 44, "event": "alloc", "id": "expert_11", "size": 30}
+{"t": 45, "event": "safe_window", "phase": "router_barrier"}
+{"t": 46, "event": "touch", "id": "expert_6", "mu": 0.32034985507201413, "sigma": 0.10438314848888679, "phase": "route"}
+{"t": 47, "event": "touch", "id": "expert_7", "mu": 0.28030531218398, "sigma": 0.13933693894096782, "phase": "route"}
+{"t": 48, "event": "touch", "id": "expert_8", "mu": 0.2518786527137359, "sigma": 0.1339780281402073, "phase": "route"}
+{"t": 49, "event": "free", "id": "expert_8"}
+{"t": 50, "event": "alloc", "id": "expert_8", "size": 30}
+{"t": 51, "event": "touch", "id": "expert_9", "mu": 0.32251285007639624, "sigma": 0.10896370170355592, "phase": "route"}
+{"t": 52, "event": "touch", "id": "expert_10", "mu": 0.2977476513408867, "sigma": 0.10969859526417443, "phase": "route"}
+{"t": 53, "event": "touch", "id": "expert_11", "mu": 0.296296023844284, "sigma": 0.17162427595388674, "phase": "route"}
+{"t": 54, "event": "free", "id": "expert_5"}
+{"t": 55, "event": "alloc", "id": "expert_5", "size": 30}
+{"t": 56, "event": "safe_window", "phase": "router_barrier"}
+{"t": 57, "event": "touch", "id": "expert_0", "mu": 0.6662442555011611, "sigma": 0.10066020482330038, "phase": "route"}
+{"t": 58, "event": "touch", "id": "expert_1", "mu": 0.6566802877981563, "sigma": 0.1431815552220687, "phase": "route"}
+{"t": 59, "event": "touch", "id": "expert_2", "mu": 0.651397187412264, "sigma": 0.10678692494212279, "phase": "route"}
+{"t": 60, "event": "free", "id": "expert_2"}
+{"t": 61, "event": "alloc", "id": "expert_2", "size": 30}
+{"t": 62, "event": "touch", "id": "expert_3", "mu": 0.6897393319234775, "sigma": 0.17367410552392926, "phase": "route"}
+{"t": 63, "event": "touch", "id": "expert_4", "mu": 0.28360859398175486, "sigma": 0.13185078572759895, "phase": "route"}
+{"t": 64, "event": "touch", "id": "expert_5", "mu": 0.3010974030285464, "sigma": 0.10747342389872531, "phase": "route"}
+{"t": 65, "event": "free", "id": "expert_11"}
+{"t": 66, "event": "alloc", "id": "expert_11", "size": 30}
+{"t": 67, "event": "safe_window", "phase": "router_barrier"}

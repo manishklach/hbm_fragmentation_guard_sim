@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": [
+    "t",
+    "event"
+  ],
+  "properties": {
+    "t": {
+      "type": "integer"
+    },
+    "event": {
+      "type": "string",
+      "enum": [
+        "alloc",
+        "free",
+        "touch",
+        "safe_window"
+      ]
+    },
+    "id": {
+      "type": "string"
+    },
+    "size": {
+      "type": "integer"
+    },
+    "mu": {
+      "type": "number"
+    },
+    "sigma": {
+      "type": "number"
+    },
+    "phase": {
+      "type": "string"
+    }
+  }
+}
