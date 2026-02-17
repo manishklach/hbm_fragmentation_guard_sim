@@ -38,10 +38,8 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 
 # Compare confidence vs LRU under demand paging
-.\.venv\Scripts\python.exe .
-run_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy confidence --miss-mode demand
-.\.venv\Scripts\python.exe .
-run_sim.py --trace .	races\llm_kvcache_growth.jsonl --policy lru --miss-mode demand
+.\.venv\Scripts\python.exe .\run_sim.py --trace .\traces\llm_kvcache_growth.jsonl --policy confidence --miss-mode demand
+.\.venv\Scripts\python.exe .\run_sim.py --trace .\traces\llm_kvcache_growth.jsonl --policy lru --miss-mode demand
 ```
 
 ### macOS / Linux
@@ -66,7 +64,7 @@ python bench.py
 
 On Windows PowerShell (without activation):
 ```powershell
-.\.venv\Scripts\python.exe bench.py
+.\.venv\Scripts\python.exe .\bench.py
 ```
 
 ---
