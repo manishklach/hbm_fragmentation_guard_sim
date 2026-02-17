@@ -146,5 +146,16 @@ See: `traces/schema.json` and `docs/TRACE_FORMAT.md`.
 
 ---
 
+## Visualizer (website/demo friendly)
+
+Generate a simple HBM occupancy heatmap from a trace:
+
+```powershell
+python -m tools.visualize_fragmentation --trace .\traces\fragmentation_stressor.jsonl --out .\docs\img\fragmentation_demo.png
+
+
+![HBM occupancy heatmap demo](docs/img/fragmentation_demo.png)
+
+
 ## License
 MIT (see `LICENSE`).
