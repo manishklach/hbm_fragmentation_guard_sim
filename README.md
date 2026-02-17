@@ -154,7 +154,7 @@ Generate a simple HBM occupancy heatmap from a trace:
 python -m tools.visualize_fragmentation --trace .\traces\fragmentation_stressor.jsonl --out .\docs\img\fragmentation_demo.png
 ```
 
-![HBM occupancy heatmap demo](docs/img/fragmentation_demo.png)
+![HBM occupancy heatmap demo](docs/img/out_fragmentation.png)
 
 
 ## License
