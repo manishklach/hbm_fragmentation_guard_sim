@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.2
+- Added Matplotlib visualizer (tools/visualize_fragmentation.py).
+- Added synthetic LLM telemetry mocks (workloads/llama3_70b_inference_mock.jsonl).
+- Added GitHub Actions CI (.github/workflows/test.yml).
+
+
 ## v3.1
 - Added `bench.py` for one-command comparisons and a compact results table.
 - Improved README for fast adoption and reproducibility.
