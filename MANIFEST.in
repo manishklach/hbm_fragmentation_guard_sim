@@ -1,0 +1,3 @@
+include traces/*.jsonl
+include traces/schema.json
+include docs/*.md

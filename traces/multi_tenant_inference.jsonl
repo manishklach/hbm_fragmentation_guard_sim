@@ -1,0 +1,488 @@
+{"t": 0, "event": "alloc", "id": "tenant_A_req_0", "size": 1048576, "phase": "tenant_A"}
+{"t": 1, "event": "touch", "id": "tenant_A_req_0", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 2, "event": "alloc", "id": "tenant_B_cache_0", "size": 2097152, "phase": "tenant_B"}
+{"t": 3, "event": "touch", "id": "tenant_B_cache_0", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 4, "event": "alloc", "id": "tenant_C_tensor_0", "size": 6291456, "phase": "tenant_C"}
+{"t": 5, "event": "touch", "id": "tenant_C_tensor_0", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 6, "event": "alloc", "id": "tenant_A_req_1", "size": 1048576, "phase": "tenant_A"}
+{"t": 7, "event": "touch", "id": "tenant_A_req_1", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 8, "event": "free", "id": "tenant_A_req_1", "phase": "tenant_A"}
+{"t": 9, "event": "alloc", "id": "tenant_B_cache_1", "size": 2097152, "phase": "tenant_B"}
+{"t": 10, "event": "touch", "id": "tenant_B_cache_0", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 11, "event": "alloc", "id": "tenant_C_tensor_1", "size": 6291456, "phase": "tenant_C"}
+{"t": 12, "event": "touch", "id": "tenant_C_tensor_1", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 13, "event": "alloc", "id": "tenant_A_req_2", "size": 1048576, "phase": "tenant_A"}
+{"t": 14, "event": "touch", "id": "tenant_A_req_2", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 15, "event": "alloc", "id": "tenant_B_cache_2", "size": 2097152, "phase": "tenant_B"}
+{"t": 16, "event": "touch", "id": "tenant_B_cache_0", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 17, "event": "alloc", "id": "tenant_C_tensor_2", "size": 6291456, "phase": "tenant_C"}
+{"t": 18, "event": "touch", "id": "tenant_C_tensor_2", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 19, "event": "alloc", "id": "tenant_A_req_3", "size": 1048576, "phase": "tenant_A"}
+{"t": 20, "event": "touch", "id": "tenant_A_req_3", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 21, "event": "free", "id": "tenant_A_req_3", "phase": "tenant_A"}
+{"t": 22, "event": "alloc", "id": "tenant_B_cache_3", "size": 2097152, "phase": "tenant_B"}
+{"t": 23, "event": "touch", "id": "tenant_B_cache_1", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 24, "event": "alloc", "id": "tenant_C_tensor_3", "size": 6291456, "phase": "tenant_C"}
+{"t": 25, "event": "touch", "id": "tenant_C_tensor_3", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 26, "event": "alloc", "id": "tenant_A_req_4", "size": 1048576, "phase": "tenant_A"}
+{"t": 27, "event": "touch", "id": "tenant_A_req_4", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 28, "event": "alloc", "id": "tenant_B_cache_4", "size": 2097152, "phase": "tenant_B"}
+{"t": 29, "event": "touch", "id": "tenant_B_cache_2", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 30, "event": "alloc", "id": "tenant_C_tensor_4", "size": 6291456, "phase": "tenant_C"}
+{"t": 31, "event": "touch", "id": "tenant_C_tensor_4", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 32, "event": "alloc", "id": "tenant_A_req_5", "size": 1048576, "phase": "tenant_A"}
+{"t": 33, "event": "touch", "id": "tenant_A_req_5", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 34, "event": "free", "id": "tenant_A_req_5", "phase": "tenant_A"}
+{"t": 35, "event": "alloc", "id": "tenant_B_cache_5", "size": 2097152, "phase": "tenant_B"}
+{"t": 36, "event": "touch", "id": "tenant_B_cache_3", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 37, "event": "free", "id": "tenant_B_cache_0", "phase": "tenant_B"}
+{"t": 38, "event": "alloc", "id": "tenant_C_tensor_5", "size": 6291456, "phase": "tenant_C"}
+{"t": 39, "event": "touch", "id": "tenant_C_tensor_5", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 40, "event": "free", "id": "tenant_C_tensor_0", "phase": "tenant_C"}
+{"t": 41, "event": "alloc", "id": "tenant_A_req_6", "size": 1048576, "phase": "tenant_A"}
+{"t": 42, "event": "touch", "id": "tenant_A_req_6", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 43, "event": "alloc", "id": "tenant_B_cache_6", "size": 2097152, "phase": "tenant_B"}
+{"t": 44, "event": "touch", "id": "tenant_B_cache_4", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 45, "event": "alloc", "id": "tenant_C_tensor_6", "size": 6291456, "phase": "tenant_C"}
+{"t": 46, "event": "touch", "id": "tenant_C_tensor_6", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 47, "event": "alloc", "id": "tenant_A_req_7", "size": 1048576, "phase": "tenant_A"}
+{"t": 48, "event": "touch", "id": "tenant_A_req_7", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 49, "event": "free", "id": "tenant_A_req_7", "phase": "tenant_A"}
+{"t": 50, "event": "alloc", "id": "tenant_B_cache_7", "size": 2097152, "phase": "tenant_B"}
+{"t": 51, "event": "touch", "id": "tenant_B_cache_5", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 52, "event": "alloc", "id": "tenant_C_tensor_7", "size": 6291456, "phase": "tenant_C"}
+{"t": 53, "event": "touch", "id": "tenant_C_tensor_7", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 54, "event": "alloc", "id": "tenant_A_req_8", "size": 1048576, "phase": "tenant_A"}
+{"t": 55, "event": "touch", "id": "tenant_A_req_8", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 56, "event": "alloc", "id": "tenant_B_cache_8", "size": 2097152, "phase": "tenant_B"}
+{"t": 57, "event": "touch", "id": "tenant_B_cache_6", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 58, "event": "alloc", "id": "tenant_C_tensor_8", "size": 6291456, "phase": "tenant_C"}
+{"t": 59, "event": "touch", "id": "tenant_C_tensor_8", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 60, "event": "free", "id": "tenant_C_tensor_1", "phase": "tenant_C"}
+{"t": 61, "event": "alloc", "id": "tenant_A_req_9", "size": 1048576, "phase": "tenant_A"}
+{"t": 62, "event": "touch", "id": "tenant_A_req_9", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 63, "event": "free", "id": "tenant_A_req_9", "phase": "tenant_A"}
+{"t": 64, "event": "alloc", "id": "tenant_B_cache_9", "size": 2097152, "phase": "tenant_B"}
+{"t": 65, "event": "touch", "id": "tenant_B_cache_7", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 66, "event": "alloc", "id": "tenant_C_tensor_9", "size": 6291456, "phase": "tenant_C"}
+{"t": 67, "event": "touch", "id": "tenant_C_tensor_9", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 68, "event": "alloc", "id": "tenant_A_req_10", "size": 1048576, "phase": "tenant_A"}
+{"t": 69, "event": "touch", "id": "tenant_A_req_10", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 70, "event": "alloc", "id": "tenant_B_cache_10", "size": 2097152, "phase": "tenant_B"}
+{"t": 71, "event": "touch", "id": "tenant_B_cache_8", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 72, "event": "alloc", "id": "tenant_C_tensor_10", "size": 6291456, "phase": "tenant_C"}
+{"t": 73, "event": "touch", "id": "tenant_C_tensor_10", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 74, "event": "alloc", "id": "tenant_A_req_11", "size": 1048576, "phase": "tenant_A"}
+{"t": 75, "event": "touch", "id": "tenant_A_req_11", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 76, "event": "free", "id": "tenant_A_req_11", "phase": "tenant_A"}
+{"t": 77, "event": "alloc", "id": "tenant_B_cache_11", "size": 2097152, "phase": "tenant_B"}
+{"t": 78, "event": "touch", "id": "tenant_B_cache_9", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 79, "event": "free", "id": "tenant_B_cache_1", "phase": "tenant_B"}
+{"t": 80, "event": "alloc", "id": "tenant_C_tensor_11", "size": 6291456, "phase": "tenant_C"}
+{"t": 81, "event": "touch", "id": "tenant_C_tensor_11", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 82, "event": "free", "id": "tenant_C_tensor_2", "phase": "tenant_C"}
+{"t": 83, "event": "alloc", "id": "tenant_A_req_12", "size": 1048576, "phase": "tenant_A"}
+{"t": 84, "event": "touch", "id": "tenant_A_req_12", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 85, "event": "alloc", "id": "tenant_B_cache_12", "size": 2097152, "phase": "tenant_B"}
+{"t": 86, "event": "touch", "id": "tenant_B_cache_10", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 87, "event": "alloc", "id": "tenant_C_tensor_12", "size": 6291456, "phase": "tenant_C"}
+{"t": 88, "event": "touch", "id": "tenant_C_tensor_12", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 89, "event": "alloc", "id": "tenant_A_req_13", "size": 1048576, "phase": "tenant_A"}
+{"t": 90, "event": "touch", "id": "tenant_A_req_13", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 91, "event": "free", "id": "tenant_A_req_13", "phase": "tenant_A"}
+{"t": 92, "event": "alloc", "id": "tenant_B_cache_13", "size": 2097152, "phase": "tenant_B"}
+{"t": 93, "event": "touch", "id": "tenant_B_cache_11", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 94, "event": "alloc", "id": "tenant_C_tensor_13", "size": 6291456, "phase": "tenant_C"}
+{"t": 95, "event": "touch", "id": "tenant_C_tensor_13", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 96, "event": "alloc", "id": "tenant_A_req_14", "size": 1048576, "phase": "tenant_A"}
+{"t": 97, "event": "touch", "id": "tenant_A_req_14", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 98, "event": "alloc", "id": "tenant_B_cache_14", "size": 2097152, "phase": "tenant_B"}
+{"t": 99, "event": "touch", "id": "tenant_B_cache_12", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 100, "event": "alloc", "id": "tenant_C_tensor_14", "size": 6291456, "phase": "tenant_C"}
+{"t": 101, "event": "touch", "id": "tenant_C_tensor_14", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 102, "event": "free", "id": "tenant_C_tensor_3", "phase": "tenant_C"}
+{"t": 103, "event": "alloc", "id": "tenant_A_req_15", "size": 1048576, "phase": "tenant_A"}
+{"t": 104, "event": "touch", "id": "tenant_A_req_15", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 105, "event": "free", "id": "tenant_A_req_15", "phase": "tenant_A"}
+{"t": 106, "event": "alloc", "id": "tenant_B_cache_15", "size": 2097152, "phase": "tenant_B"}
+{"t": 107, "event": "touch", "id": "tenant_B_cache_13", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 108, "event": "alloc", "id": "tenant_C_tensor_15", "size": 6291456, "phase": "tenant_C"}
+{"t": 109, "event": "touch", "id": "tenant_C_tensor_15", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 110, "event": "alloc", "id": "tenant_A_req_16", "size": 1048576, "phase": "tenant_A"}
+{"t": 111, "event": "touch", "id": "tenant_A_req_16", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 112, "event": "alloc", "id": "tenant_B_cache_16", "size": 2097152, "phase": "tenant_B"}
+{"t": 113, "event": "touch", "id": "tenant_B_cache_14", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 114, "event": "alloc", "id": "tenant_C_tensor_16", "size": 6291456, "phase": "tenant_C"}
+{"t": 115, "event": "touch", "id": "tenant_C_tensor_16", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 116, "event": "alloc", "id": "tenant_A_req_17", "size": 1048576, "phase": "tenant_A"}
+{"t": 117, "event": "touch", "id": "tenant_A_req_17", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 118, "event": "free", "id": "tenant_A_req_17", "phase": "tenant_A"}
+{"t": 119, "event": "alloc", "id": "tenant_B_cache_17", "size": 2097152, "phase": "tenant_B"}
+{"t": 120, "event": "touch", "id": "tenant_B_cache_15", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 121, "event": "free", "id": "tenant_B_cache_2", "phase": "tenant_B"}
+{"t": 122, "event": "alloc", "id": "tenant_C_tensor_17", "size": 6291456, "phase": "tenant_C"}
+{"t": 123, "event": "touch", "id": "tenant_C_tensor_17", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 124, "event": "free", "id": "tenant_C_tensor_4", "phase": "tenant_C"}
+{"t": 125, "event": "alloc", "id": "tenant_A_req_18", "size": 1048576, "phase": "tenant_A"}
+{"t": 126, "event": "touch", "id": "tenant_A_req_18", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 127, "event": "alloc", "id": "tenant_B_cache_18", "size": 2097152, "phase": "tenant_B"}
+{"t": 128, "event": "touch", "id": "tenant_B_cache_16", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 129, "event": "alloc", "id": "tenant_C_tensor_18", "size": 6291456, "phase": "tenant_C"}
+{"t": 130, "event": "touch", "id": "tenant_C_tensor_18", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 131, "event": "alloc", "id": "tenant_A_req_19", "size": 1048576, "phase": "tenant_A"}
+{"t": 132, "event": "touch", "id": "tenant_A_req_19", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 133, "event": "free", "id": "tenant_A_req_19", "phase": "tenant_A"}
+{"t": 134, "event": "alloc", "id": "tenant_B_cache_19", "size": 2097152, "phase": "tenant_B"}
+{"t": 135, "event": "touch", "id": "tenant_B_cache_17", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 136, "event": "alloc", "id": "tenant_C_tensor_19", "size": 6291456, "phase": "tenant_C"}
+{"t": 137, "event": "touch", "id": "tenant_C_tensor_19", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 138, "event": "alloc", "id": "tenant_A_req_20", "size": 1048576, "phase": "tenant_A"}
+{"t": 139, "event": "touch", "id": "tenant_A_req_20", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 140, "event": "alloc", "id": "tenant_B_cache_20", "size": 2097152, "phase": "tenant_B"}
+{"t": 141, "event": "touch", "id": "tenant_B_cache_18", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 142, "event": "alloc", "id": "tenant_C_tensor_20", "size": 6291456, "phase": "tenant_C"}
+{"t": 143, "event": "touch", "id": "tenant_C_tensor_20", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 144, "event": "free", "id": "tenant_C_tensor_5", "phase": "tenant_C"}
+{"t": 145, "event": "alloc", "id": "tenant_A_req_21", "size": 1048576, "phase": "tenant_A"}
+{"t": 146, "event": "touch", "id": "tenant_A_req_21", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 147, "event": "free", "id": "tenant_A_req_21", "phase": "tenant_A"}
+{"t": 148, "event": "alloc", "id": "tenant_B_cache_21", "size": 2097152, "phase": "tenant_B"}
+{"t": 149, "event": "touch", "id": "tenant_B_cache_19", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 150, "event": "alloc", "id": "tenant_C_tensor_21", "size": 6291456, "phase": "tenant_C"}
+{"t": 151, "event": "touch", "id": "tenant_C_tensor_21", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 152, "event": "alloc", "id": "tenant_A_req_22", "size": 1048576, "phase": "tenant_A"}
+{"t": 153, "event": "touch", "id": "tenant_A_req_22", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 154, "event": "alloc", "id": "tenant_B_cache_22", "size": 2097152, "phase": "tenant_B"}
+{"t": 155, "event": "touch", "id": "tenant_B_cache_20", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 156, "event": "alloc", "id": "tenant_C_tensor_22", "size": 6291456, "phase": "tenant_C"}
+{"t": 157, "event": "touch", "id": "tenant_C_tensor_22", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 158, "event": "alloc", "id": "tenant_A_req_23", "size": 1048576, "phase": "tenant_A"}
+{"t": 159, "event": "touch", "id": "tenant_A_req_23", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 160, "event": "free", "id": "tenant_A_req_23", "phase": "tenant_A"}
+{"t": 161, "event": "alloc", "id": "tenant_B_cache_23", "size": 2097152, "phase": "tenant_B"}
+{"t": 162, "event": "touch", "id": "tenant_B_cache_21", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 163, "event": "free", "id": "tenant_B_cache_3", "phase": "tenant_B"}
+{"t": 164, "event": "alloc", "id": "tenant_C_tensor_23", "size": 6291456, "phase": "tenant_C"}
+{"t": 165, "event": "touch", "id": "tenant_C_tensor_23", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 166, "event": "free", "id": "tenant_C_tensor_6", "phase": "tenant_C"}
+{"t": 167, "event": "alloc", "id": "tenant_A_req_24", "size": 1048576, "phase": "tenant_A"}
+{"t": 168, "event": "touch", "id": "tenant_A_req_24", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 169, "event": "alloc", "id": "tenant_B_cache_24", "size": 2097152, "phase": "tenant_B"}
+{"t": 170, "event": "touch", "id": "tenant_B_cache_22", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 171, "event": "alloc", "id": "tenant_C_tensor_24", "size": 6291456, "phase": "tenant_C"}
+{"t": 172, "event": "touch", "id": "tenant_C_tensor_24", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 173, "event": "alloc", "id": "tenant_A_req_25", "size": 1048576, "phase": "tenant_A"}
+{"t": 174, "event": "touch", "id": "tenant_A_req_25", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 175, "event": "free", "id": "tenant_A_req_25", "phase": "tenant_A"}
+{"t": 176, "event": "alloc", "id": "tenant_B_cache_25", "size": 2097152, "phase": "tenant_B"}
+{"t": 177, "event": "touch", "id": "tenant_B_cache_23", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 178, "event": "alloc", "id": "tenant_C_tensor_25", "size": 6291456, "phase": "tenant_C"}
+{"t": 179, "event": "touch", "id": "tenant_C_tensor_25", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 180, "event": "alloc", "id": "tenant_A_req_26", "size": 1048576, "phase": "tenant_A"}
+{"t": 181, "event": "touch", "id": "tenant_A_req_26", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 182, "event": "alloc", "id": "tenant_B_cache_26", "size": 2097152, "phase": "tenant_B"}
+{"t": 183, "event": "touch", "id": "tenant_B_cache_24", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 184, "event": "alloc", "id": "tenant_C_tensor_26", "size": 6291456, "phase": "tenant_C"}
+{"t": 185, "event": "touch", "id": "tenant_C_tensor_26", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 186, "event": "free", "id": "tenant_C_tensor_7", "phase": "tenant_C"}
+{"t": 187, "event": "alloc", "id": "tenant_A_req_27", "size": 1048576, "phase": "tenant_A"}
+{"t": 188, "event": "touch", "id": "tenant_A_req_27", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 189, "event": "free", "id": "tenant_A_req_27", "phase": "tenant_A"}
+{"t": 190, "event": "alloc", "id": "tenant_B_cache_27", "size": 2097152, "phase": "tenant_B"}
+{"t": 191, "event": "touch", "id": "tenant_B_cache_25", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 192, "event": "alloc", "id": "tenant_C_tensor_27", "size": 6291456, "phase": "tenant_C"}
+{"t": 193, "event": "touch", "id": "tenant_C_tensor_27", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 194, "event": "alloc", "id": "tenant_A_req_28", "size": 1048576, "phase": "tenant_A"}
+{"t": 195, "event": "touch", "id": "tenant_A_req_28", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 196, "event": "alloc", "id": "tenant_B_cache_28", "size": 2097152, "phase": "tenant_B"}
+{"t": 197, "event": "touch", "id": "tenant_B_cache_26", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 198, "event": "alloc", "id": "tenant_C_tensor_28", "size": 6291456, "phase": "tenant_C"}
+{"t": 199, "event": "touch", "id": "tenant_C_tensor_28", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 200, "event": "alloc", "id": "tenant_A_req_29", "size": 1048576, "phase": "tenant_A"}
+{"t": 201, "event": "touch", "id": "tenant_A_req_29", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 202, "event": "free", "id": "tenant_A_req_29", "phase": "tenant_A"}
+{"t": 203, "event": "alloc", "id": "tenant_B_cache_29", "size": 2097152, "phase": "tenant_B"}
+{"t": 204, "event": "touch", "id": "tenant_B_cache_27", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 205, "event": "free", "id": "tenant_B_cache_4", "phase": "tenant_B"}
+{"t": 206, "event": "alloc", "id": "tenant_C_tensor_29", "size": 6291456, "phase": "tenant_C"}
+{"t": 207, "event": "touch", "id": "tenant_C_tensor_29", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 208, "event": "free", "id": "tenant_C_tensor_8", "phase": "tenant_C"}
+{"t": 209, "event": "alloc", "id": "tenant_A_req_30", "size": 1048576, "phase": "tenant_A"}
+{"t": 210, "event": "touch", "id": "tenant_A_req_30", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 211, "event": "alloc", "id": "tenant_B_cache_30", "size": 2097152, "phase": "tenant_B"}
+{"t": 212, "event": "touch", "id": "tenant_B_cache_28", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 213, "event": "alloc", "id": "tenant_C_tensor_30", "size": 6291456, "phase": "tenant_C"}
+{"t": 214, "event": "touch", "id": "tenant_C_tensor_30", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 215, "event": "alloc", "id": "tenant_A_req_31", "size": 1048576, "phase": "tenant_A"}
+{"t": 216, "event": "touch", "id": "tenant_A_req_31", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 217, "event": "free", "id": "tenant_A_req_31", "phase": "tenant_A"}
+{"t": 218, "event": "alloc", "id": "tenant_B_cache_31", "size": 2097152, "phase": "tenant_B"}
+{"t": 219, "event": "touch", "id": "tenant_B_cache_29", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 220, "event": "alloc", "id": "tenant_C_tensor_31", "size": 6291456, "phase": "tenant_C"}
+{"t": 221, "event": "touch", "id": "tenant_C_tensor_31", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 222, "event": "alloc", "id": "tenant_A_req_32", "size": 1048576, "phase": "tenant_A"}
+{"t": 223, "event": "touch", "id": "tenant_A_req_32", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 224, "event": "alloc", "id": "tenant_B_cache_32", "size": 2097152, "phase": "tenant_B"}
+{"t": 225, "event": "touch", "id": "tenant_B_cache_30", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 226, "event": "alloc", "id": "tenant_C_tensor_32", "size": 6291456, "phase": "tenant_C"}
+{"t": 227, "event": "touch", "id": "tenant_C_tensor_32", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 228, "event": "free", "id": "tenant_C_tensor_9", "phase": "tenant_C"}
+{"t": 229, "event": "alloc", "id": "tenant_A_req_33", "size": 1048576, "phase": "tenant_A"}
+{"t": 230, "event": "touch", "id": "tenant_A_req_33", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 231, "event": "free", "id": "tenant_A_req_33", "phase": "tenant_A"}
+{"t": 232, "event": "alloc", "id": "tenant_B_cache_33", "size": 2097152, "phase": "tenant_B"}
+{"t": 233, "event": "touch", "id": "tenant_B_cache_31", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 234, "event": "alloc", "id": "tenant_C_tensor_33", "size": 6291456, "phase": "tenant_C"}
+{"t": 235, "event": "touch", "id": "tenant_C_tensor_33", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 236, "event": "alloc", "id": "tenant_A_req_34", "size": 1048576, "phase": "tenant_A"}
+{"t": 237, "event": "touch", "id": "tenant_A_req_34", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 238, "event": "alloc", "id": "tenant_B_cache_34", "size": 2097152, "phase": "tenant_B"}
+{"t": 239, "event": "touch", "id": "tenant_B_cache_32", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 240, "event": "alloc", "id": "tenant_C_tensor_34", "size": 6291456, "phase": "tenant_C"}
+{"t": 241, "event": "touch", "id": "tenant_C_tensor_34", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 242, "event": "alloc", "id": "tenant_A_req_35", "size": 1048576, "phase": "tenant_A"}
+{"t": 243, "event": "touch", "id": "tenant_A_req_35", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 244, "event": "free", "id": "tenant_A_req_35", "phase": "tenant_A"}
+{"t": 245, "event": "alloc", "id": "tenant_B_cache_35", "size": 2097152, "phase": "tenant_B"}
+{"t": 246, "event": "touch", "id": "tenant_B_cache_33", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 247, "event": "free", "id": "tenant_B_cache_5", "phase": "tenant_B"}
+{"t": 248, "event": "alloc", "id": "tenant_C_tensor_35", "size": 6291456, "phase": "tenant_C"}
+{"t": 249, "event": "touch", "id": "tenant_C_tensor_35", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 250, "event": "free", "id": "tenant_C_tensor_10", "phase": "tenant_C"}
+{"t": 251, "event": "alloc", "id": "tenant_A_req_36", "size": 1048576, "phase": "tenant_A"}
+{"t": 252, "event": "touch", "id": "tenant_A_req_36", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 253, "event": "alloc", "id": "tenant_B_cache_36", "size": 2097152, "phase": "tenant_B"}
+{"t": 254, "event": "touch", "id": "tenant_B_cache_34", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 255, "event": "alloc", "id": "tenant_C_tensor_36", "size": 6291456, "phase": "tenant_C"}
+{"t": 256, "event": "touch", "id": "tenant_C_tensor_36", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 257, "event": "alloc", "id": "tenant_A_req_37", "size": 1048576, "phase": "tenant_A"}
+{"t": 258, "event": "touch", "id": "tenant_A_req_37", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 259, "event": "free", "id": "tenant_A_req_37", "phase": "tenant_A"}
+{"t": 260, "event": "alloc", "id": "tenant_B_cache_37", "size": 2097152, "phase": "tenant_B"}
+{"t": 261, "event": "touch", "id": "tenant_B_cache_35", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 262, "event": "alloc", "id": "tenant_C_tensor_37", "size": 6291456, "phase": "tenant_C"}
+{"t": 263, "event": "touch", "id": "tenant_C_tensor_37", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 264, "event": "alloc", "id": "tenant_A_req_38", "size": 1048576, "phase": "tenant_A"}
+{"t": 265, "event": "touch", "id": "tenant_A_req_38", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 266, "event": "alloc", "id": "tenant_B_cache_38", "size": 2097152, "phase": "tenant_B"}
+{"t": 267, "event": "touch", "id": "tenant_B_cache_36", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 268, "event": "alloc", "id": "tenant_C_tensor_38", "size": 6291456, "phase": "tenant_C"}
+{"t": 269, "event": "touch", "id": "tenant_C_tensor_38", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 270, "event": "free", "id": "tenant_C_tensor_11", "phase": "tenant_C"}
+{"t": 271, "event": "alloc", "id": "tenant_A_req_39", "size": 1048576, "phase": "tenant_A"}
+{"t": 272, "event": "touch", "id": "tenant_A_req_39", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 273, "event": "free", "id": "tenant_A_req_39", "phase": "tenant_A"}
+{"t": 274, "event": "alloc", "id": "tenant_B_cache_39", "size": 2097152, "phase": "tenant_B"}
+{"t": 275, "event": "touch", "id": "tenant_B_cache_37", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 276, "event": "alloc", "id": "tenant_C_tensor_39", "size": 6291456, "phase": "tenant_C"}
+{"t": 277, "event": "touch", "id": "tenant_C_tensor_39", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 278, "event": "alloc", "id": "tenant_A_req_40", "size": 1048576, "phase": "tenant_A"}
+{"t": 279, "event": "touch", "id": "tenant_A_req_40", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 280, "event": "alloc", "id": "tenant_B_cache_40", "size": 2097152, "phase": "tenant_B"}
+{"t": 281, "event": "touch", "id": "tenant_B_cache_38", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 282, "event": "alloc", "id": "tenant_C_tensor_40", "size": 6291456, "phase": "tenant_C"}
+{"t": 283, "event": "touch", "id": "tenant_C_tensor_40", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 284, "event": "alloc", "id": "tenant_A_req_41", "size": 1048576, "phase": "tenant_A"}
+{"t": 285, "event": "touch", "id": "tenant_A_req_41", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 286, "event": "free", "id": "tenant_A_req_41", "phase": "tenant_A"}
+{"t": 287, "event": "alloc", "id": "tenant_B_cache_41", "size": 2097152, "phase": "tenant_B"}
+{"t": 288, "event": "touch", "id": "tenant_B_cache_39", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 289, "event": "free", "id": "tenant_B_cache_6", "phase": "tenant_B"}
+{"t": 290, "event": "alloc", "id": "tenant_C_tensor_41", "size": 6291456, "phase": "tenant_C"}
+{"t": 291, "event": "touch", "id": "tenant_C_tensor_41", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 292, "event": "free", "id": "tenant_C_tensor_12", "phase": "tenant_C"}
+{"t": 293, "event": "alloc", "id": "tenant_A_req_42", "size": 1048576, "phase": "tenant_A"}
+{"t": 294, "event": "touch", "id": "tenant_A_req_42", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 295, "event": "alloc", "id": "tenant_B_cache_42", "size": 2097152, "phase": "tenant_B"}
+{"t": 296, "event": "touch", "id": "tenant_B_cache_40", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 297, "event": "alloc", "id": "tenant_C_tensor_42", "size": 6291456, "phase": "tenant_C"}
+{"t": 298, "event": "touch", "id": "tenant_C_tensor_42", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 299, "event": "alloc", "id": "tenant_A_req_43", "size": 1048576, "phase": "tenant_A"}
+{"t": 300, "event": "touch", "id": "tenant_A_req_43", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 301, "event": "free", "id": "tenant_A_req_43", "phase": "tenant_A"}
+{"t": 302, "event": "alloc", "id": "tenant_B_cache_43", "size": 2097152, "phase": "tenant_B"}
+{"t": 303, "event": "touch", "id": "tenant_B_cache_41", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 304, "event": "alloc", "id": "tenant_C_tensor_43", "size": 6291456, "phase": "tenant_C"}
+{"t": 305, "event": "touch", "id": "tenant_C_tensor_43", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 306, "event": "alloc", "id": "tenant_A_req_44", "size": 1048576, "phase": "tenant_A"}
+{"t": 307, "event": "touch", "id": "tenant_A_req_44", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 308, "event": "alloc", "id": "tenant_B_cache_44", "size": 2097152, "phase": "tenant_B"}
+{"t": 309, "event": "touch", "id": "tenant_B_cache_42", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 310, "event": "alloc", "id": "tenant_C_tensor_44", "size": 6291456, "phase": "tenant_C"}
+{"t": 311, "event": "touch", "id": "tenant_C_tensor_44", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 312, "event": "free", "id": "tenant_C_tensor_13", "phase": "tenant_C"}
+{"t": 313, "event": "alloc", "id": "tenant_A_req_45", "size": 1048576, "phase": "tenant_A"}
+{"t": 314, "event": "touch", "id": "tenant_A_req_45", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 315, "event": "free", "id": "tenant_A_req_45", "phase": "tenant_A"}
+{"t": 316, "event": "alloc", "id": "tenant_B_cache_45", "size": 2097152, "phase": "tenant_B"}
+{"t": 317, "event": "touch", "id": "tenant_B_cache_43", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 318, "event": "alloc", "id": "tenant_C_tensor_45", "size": 6291456, "phase": "tenant_C"}
+{"t": 319, "event": "touch", "id": "tenant_C_tensor_45", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 320, "event": "alloc", "id": "tenant_A_req_46", "size": 1048576, "phase": "tenant_A"}
+{"t": 321, "event": "touch", "id": "tenant_A_req_46", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 322, "event": "alloc", "id": "tenant_B_cache_46", "size": 2097152, "phase": "tenant_B"}
+{"t": 323, "event": "touch", "id": "tenant_B_cache_44", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 324, "event": "alloc", "id": "tenant_C_tensor_46", "size": 6291456, "phase": "tenant_C"}
+{"t": 325, "event": "touch", "id": "tenant_C_tensor_46", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 326, "event": "alloc", "id": "tenant_A_req_47", "size": 1048576, "phase": "tenant_A"}
+{"t": 327, "event": "touch", "id": "tenant_A_req_47", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 328, "event": "free", "id": "tenant_A_req_47", "phase": "tenant_A"}
+{"t": 329, "event": "alloc", "id": "tenant_B_cache_47", "size": 2097152, "phase": "tenant_B"}
+{"t": 330, "event": "touch", "id": "tenant_B_cache_45", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 331, "event": "free", "id": "tenant_B_cache_7", "phase": "tenant_B"}
+{"t": 332, "event": "alloc", "id": "tenant_C_tensor_47", "size": 6291456, "phase": "tenant_C"}
+{"t": 333, "event": "touch", "id": "tenant_C_tensor_47", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 334, "event": "free", "id": "tenant_C_tensor_14", "phase": "tenant_C"}
+{"t": 335, "event": "alloc", "id": "tenant_A_req_48", "size": 1048576, "phase": "tenant_A"}
+{"t": 336, "event": "touch", "id": "tenant_A_req_48", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 337, "event": "alloc", "id": "tenant_B_cache_48", "size": 2097152, "phase": "tenant_B"}
+{"t": 338, "event": "touch", "id": "tenant_B_cache_46", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 339, "event": "alloc", "id": "tenant_C_tensor_48", "size": 6291456, "phase": "tenant_C"}
+{"t": 340, "event": "touch", "id": "tenant_C_tensor_48", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 341, "event": "alloc", "id": "tenant_A_req_49", "size": 1048576, "phase": "tenant_A"}
+{"t": 342, "event": "touch", "id": "tenant_A_req_49", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 343, "event": "free", "id": "tenant_A_req_49", "phase": "tenant_A"}
+{"t": 344, "event": "alloc", "id": "tenant_B_cache_49", "size": 2097152, "phase": "tenant_B"}
+{"t": 345, "event": "touch", "id": "tenant_B_cache_47", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 346, "event": "alloc", "id": "tenant_C_tensor_49", "size": 6291456, "phase": "tenant_C"}
+{"t": 347, "event": "touch", "id": "tenant_C_tensor_49", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 348, "event": "alloc", "id": "tenant_A_req_50", "size": 1048576, "phase": "tenant_A"}
+{"t": 349, "event": "touch", "id": "tenant_A_req_50", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 350, "event": "alloc", "id": "tenant_B_cache_50", "size": 2097152, "phase": "tenant_B"}
+{"t": 351, "event": "touch", "id": "tenant_B_cache_48", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 352, "event": "alloc", "id": "tenant_C_tensor_50", "size": 6291456, "phase": "tenant_C"}
+{"t": 353, "event": "touch", "id": "tenant_C_tensor_50", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 354, "event": "free", "id": "tenant_C_tensor_15", "phase": "tenant_C"}
+{"t": 355, "event": "alloc", "id": "tenant_A_req_51", "size": 1048576, "phase": "tenant_A"}
+{"t": 356, "event": "touch", "id": "tenant_A_req_51", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 357, "event": "free", "id": "tenant_A_req_51", "phase": "tenant_A"}
+{"t": 358, "event": "alloc", "id": "tenant_B_cache_51", "size": 2097152, "phase": "tenant_B"}
+{"t": 359, "event": "touch", "id": "tenant_B_cache_49", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 360, "event": "alloc", "id": "tenant_C_tensor_51", "size": 6291456, "phase": "tenant_C"}
+{"t": 361, "event": "touch", "id": "tenant_C_tensor_51", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 362, "event": "alloc", "id": "tenant_A_req_52", "size": 1048576, "phase": "tenant_A"}
+{"t": 363, "event": "touch", "id": "tenant_A_req_52", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 364, "event": "alloc", "id": "tenant_B_cache_52", "size": 2097152, "phase": "tenant_B"}
+{"t": 365, "event": "touch", "id": "tenant_B_cache_50", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 366, "event": "alloc", "id": "tenant_C_tensor_52", "size": 6291456, "phase": "tenant_C"}
+{"t": 367, "event": "touch", "id": "tenant_C_tensor_52", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 368, "event": "alloc", "id": "tenant_A_req_53", "size": 1048576, "phase": "tenant_A"}
+{"t": 369, "event": "touch", "id": "tenant_A_req_53", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 370, "event": "free", "id": "tenant_A_req_53", "phase": "tenant_A"}
+{"t": 371, "event": "alloc", "id": "tenant_B_cache_53", "size": 2097152, "phase": "tenant_B"}
+{"t": 372, "event": "touch", "id": "tenant_B_cache_51", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 373, "event": "free", "id": "tenant_B_cache_8", "phase": "tenant_B"}
+{"t": 374, "event": "alloc", "id": "tenant_C_tensor_53", "size": 6291456, "phase": "tenant_C"}
+{"t": 375, "event": "touch", "id": "tenant_C_tensor_53", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 376, "event": "free", "id": "tenant_C_tensor_16", "phase": "tenant_C"}
+{"t": 377, "event": "alloc", "id": "tenant_A_req_54", "size": 1048576, "phase": "tenant_A"}
+{"t": 378, "event": "touch", "id": "tenant_A_req_54", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 379, "event": "alloc", "id": "tenant_B_cache_54", "size": 2097152, "phase": "tenant_B"}
+{"t": 380, "event": "touch", "id": "tenant_B_cache_52", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 381, "event": "alloc", "id": "tenant_C_tensor_54", "size": 6291456, "phase": "tenant_C"}
+{"t": 382, "event": "touch", "id": "tenant_C_tensor_54", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 383, "event": "alloc", "id": "tenant_A_req_55", "size": 1048576, "phase": "tenant_A"}
+{"t": 384, "event": "touch", "id": "tenant_A_req_55", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 385, "event": "free", "id": "tenant_A_req_55", "phase": "tenant_A"}
+{"t": 386, "event": "alloc", "id": "tenant_B_cache_55", "size": 2097152, "phase": "tenant_B"}
+{"t": 387, "event": "touch", "id": "tenant_B_cache_53", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 388, "event": "alloc", "id": "tenant_C_tensor_55", "size": 6291456, "phase": "tenant_C"}
+{"t": 389, "event": "touch", "id": "tenant_C_tensor_55", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 390, "event": "alloc", "id": "tenant_A_req_56", "size": 1048576, "phase": "tenant_A"}
+{"t": 391, "event": "touch", "id": "tenant_A_req_56", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 392, "event": "alloc", "id": "tenant_B_cache_56", "size": 2097152, "phase": "tenant_B"}
+{"t": 393, "event": "touch", "id": "tenant_B_cache_54", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 394, "event": "alloc", "id": "tenant_C_tensor_56", "size": 6291456, "phase": "tenant_C"}
+{"t": 395, "event": "touch", "id": "tenant_C_tensor_56", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 396, "event": "free", "id": "tenant_C_tensor_17", "phase": "tenant_C"}
+{"t": 397, "event": "alloc", "id": "tenant_A_req_57", "size": 1048576, "phase": "tenant_A"}
+{"t": 398, "event": "touch", "id": "tenant_A_req_57", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 399, "event": "free", "id": "tenant_A_req_57", "phase": "tenant_A"}
+{"t": 400, "event": "alloc", "id": "tenant_B_cache_57", "size": 2097152, "phase": "tenant_B"}
+{"t": 401, "event": "touch", "id": "tenant_B_cache_55", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 402, "event": "alloc", "id": "tenant_C_tensor_57", "size": 6291456, "phase": "tenant_C"}
+{"t": 403, "event": "touch", "id": "tenant_C_tensor_57", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 404, "event": "alloc", "id": "tenant_A_req_58", "size": 1048576, "phase": "tenant_A"}
+{"t": 405, "event": "touch", "id": "tenant_A_req_58", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 406, "event": "alloc", "id": "tenant_B_cache_58", "size": 2097152, "phase": "tenant_B"}
+{"t": 407, "event": "touch", "id": "tenant_B_cache_56", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 408, "event": "alloc", "id": "tenant_C_tensor_58", "size": 6291456, "phase": "tenant_C"}
+{"t": 409, "event": "touch", "id": "tenant_C_tensor_58", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 410, "event": "alloc", "id": "tenant_A_req_59", "size": 1048576, "phase": "tenant_A"}
+{"t": 411, "event": "touch", "id": "tenant_A_req_59", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 412, "event": "free", "id": "tenant_A_req_59", "phase": "tenant_A"}
+{"t": 413, "event": "alloc", "id": "tenant_B_cache_59", "size": 2097152, "phase": "tenant_B"}
+{"t": 414, "event": "touch", "id": "tenant_B_cache_57", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 415, "event": "free", "id": "tenant_B_cache_9", "phase": "tenant_B"}
+{"t": 416, "event": "alloc", "id": "tenant_C_tensor_59", "size": 6291456, "phase": "tenant_C"}
+{"t": 417, "event": "touch", "id": "tenant_C_tensor_59", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 418, "event": "free", "id": "tenant_C_tensor_18", "phase": "tenant_C"}
+{"t": 419, "event": "alloc", "id": "tenant_A_req_60", "size": 1048576, "phase": "tenant_A"}
+{"t": 420, "event": "touch", "id": "tenant_A_req_60", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 421, "event": "alloc", "id": "tenant_B_cache_60", "size": 2097152, "phase": "tenant_B"}
+{"t": 422, "event": "touch", "id": "tenant_B_cache_58", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 423, "event": "alloc", "id": "tenant_C_tensor_60", "size": 6291456, "phase": "tenant_C"}
+{"t": 424, "event": "touch", "id": "tenant_C_tensor_60", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 425, "event": "alloc", "id": "tenant_A_req_61", "size": 1048576, "phase": "tenant_A"}
+{"t": 426, "event": "touch", "id": "tenant_A_req_61", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 427, "event": "free", "id": "tenant_A_req_61", "phase": "tenant_A"}
+{"t": 428, "event": "alloc", "id": "tenant_B_cache_61", "size": 2097152, "phase": "tenant_B"}
+{"t": 429, "event": "touch", "id": "tenant_B_cache_59", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 430, "event": "alloc", "id": "tenant_C_tensor_61", "size": 6291456, "phase": "tenant_C"}
+{"t": 431, "event": "touch", "id": "tenant_C_tensor_61", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 432, "event": "alloc", "id": "tenant_A_req_62", "size": 1048576, "phase": "tenant_A"}
+{"t": 433, "event": "touch", "id": "tenant_A_req_62", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 434, "event": "alloc", "id": "tenant_B_cache_62", "size": 2097152, "phase": "tenant_B"}
+{"t": 435, "event": "touch", "id": "tenant_B_cache_60", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 436, "event": "alloc", "id": "tenant_C_tensor_62", "size": 6291456, "phase": "tenant_C"}
+{"t": 437, "event": "touch", "id": "tenant_C_tensor_62", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 438, "event": "free", "id": "tenant_C_tensor_19", "phase": "tenant_C"}
+{"t": 439, "event": "alloc", "id": "tenant_A_req_63", "size": 1048576, "phase": "tenant_A"}
+{"t": 440, "event": "touch", "id": "tenant_A_req_63", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 441, "event": "free", "id": "tenant_A_req_63", "phase": "tenant_A"}
+{"t": 442, "event": "alloc", "id": "tenant_B_cache_63", "size": 2097152, "phase": "tenant_B"}
+{"t": 443, "event": "touch", "id": "tenant_B_cache_61", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 444, "event": "alloc", "id": "tenant_C_tensor_63", "size": 6291456, "phase": "tenant_C"}
+{"t": 445, "event": "touch", "id": "tenant_C_tensor_63", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 446, "event": "alloc", "id": "tenant_A_req_64", "size": 1048576, "phase": "tenant_A"}
+{"t": 447, "event": "touch", "id": "tenant_A_req_64", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 448, "event": "alloc", "id": "tenant_B_cache_64", "size": 2097152, "phase": "tenant_B"}
+{"t": 449, "event": "touch", "id": "tenant_B_cache_62", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 450, "event": "alloc", "id": "tenant_C_tensor_64", "size": 6291456, "phase": "tenant_C"}
+{"t": 451, "event": "touch", "id": "tenant_C_tensor_64", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 452, "event": "alloc", "id": "tenant_A_req_65", "size": 1048576, "phase": "tenant_A"}
+{"t": 453, "event": "touch", "id": "tenant_A_req_65", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 454, "event": "free", "id": "tenant_A_req_65", "phase": "tenant_A"}
+{"t": 455, "event": "alloc", "id": "tenant_B_cache_65", "size": 2097152, "phase": "tenant_B"}
+{"t": 456, "event": "touch", "id": "tenant_B_cache_63", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 457, "event": "free", "id": "tenant_B_cache_10", "phase": "tenant_B"}
+{"t": 458, "event": "alloc", "id": "tenant_C_tensor_65", "size": 6291456, "phase": "tenant_C"}
+{"t": 459, "event": "touch", "id": "tenant_C_tensor_65", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 460, "event": "free", "id": "tenant_C_tensor_20", "phase": "tenant_C"}
+{"t": 461, "event": "alloc", "id": "tenant_A_req_66", "size": 1048576, "phase": "tenant_A"}
+{"t": 462, "event": "touch", "id": "tenant_A_req_66", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 463, "event": "alloc", "id": "tenant_B_cache_66", "size": 2097152, "phase": "tenant_B"}
+{"t": 464, "event": "touch", "id": "tenant_B_cache_64", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 465, "event": "alloc", "id": "tenant_C_tensor_66", "size": 6291456, "phase": "tenant_C"}
+{"t": 466, "event": "touch", "id": "tenant_C_tensor_66", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 467, "event": "alloc", "id": "tenant_A_req_67", "size": 1048576, "phase": "tenant_A"}
+{"t": 468, "event": "touch", "id": "tenant_A_req_67", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 469, "event": "free", "id": "tenant_A_req_67", "phase": "tenant_A"}
+{"t": 470, "event": "alloc", "id": "tenant_B_cache_67", "size": 2097152, "phase": "tenant_B"}
+{"t": 471, "event": "touch", "id": "tenant_B_cache_65", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 472, "event": "alloc", "id": "tenant_C_tensor_67", "size": 6291456, "phase": "tenant_C"}
+{"t": 473, "event": "touch", "id": "tenant_C_tensor_67", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 474, "event": "alloc", "id": "tenant_A_req_68", "size": 1048576, "phase": "tenant_A"}
+{"t": 475, "event": "touch", "id": "tenant_A_req_68", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 476, "event": "alloc", "id": "tenant_B_cache_68", "size": 2097152, "phase": "tenant_B"}
+{"t": 477, "event": "touch", "id": "tenant_B_cache_66", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 478, "event": "alloc", "id": "tenant_C_tensor_68", "size": 6291456, "phase": "tenant_C"}
+{"t": 479, "event": "touch", "id": "tenant_C_tensor_68", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}
+{"t": 480, "event": "free", "id": "tenant_C_tensor_21", "phase": "tenant_C"}
+{"t": 481, "event": "alloc", "id": "tenant_A_req_69", "size": 1048576, "phase": "tenant_A"}
+{"t": 482, "event": "touch", "id": "tenant_A_req_69", "mu": 0.2, "sigma": 0.2, "phase": "tenant_A"}
+{"t": 483, "event": "free", "id": "tenant_A_req_69", "phase": "tenant_A"}
+{"t": 484, "event": "alloc", "id": "tenant_B_cache_69", "size": 2097152, "phase": "tenant_B"}
+{"t": 485, "event": "touch", "id": "tenant_B_cache_67", "mu": 0.88, "sigma": 0.05, "phase": "tenant_B"}
+{"t": 486, "event": "alloc", "id": "tenant_C_tensor_69", "size": 6291456, "phase": "tenant_C"}
+{"t": 487, "event": "touch", "id": "tenant_C_tensor_69", "mu": 0.55, "sigma": 0.1, "phase": "tenant_C"}

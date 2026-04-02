@@ -1,0 +1,315 @@
+{"t": 0, "event": "alloc", "id": "expert_0", "size": 8388608, "phase": "initial_load"}
+{"t": 1, "event": "alloc", "id": "expert_1", "size": 8388608, "phase": "initial_load"}
+{"t": 2, "event": "alloc", "id": "expert_2", "size": 8388608, "phase": "initial_load"}
+{"t": 3, "event": "alloc", "id": "expert_3", "size": 8388608, "phase": "initial_load"}
+{"t": 4, "event": "alloc", "id": "expert_4", "size": 8388608, "phase": "initial_load"}
+{"t": 5, "event": "alloc", "id": "expert_5", "size": 8388608, "phase": "initial_load"}
+{"t": 6, "event": "alloc", "id": "expert_6", "size": 8388608, "phase": "initial_load"}
+{"t": 7, "event": "alloc", "id": "expert_7", "size": 8388608, "phase": "initial_load"}
+{"t": 8, "event": "alloc", "id": "expert_8", "size": 8388608, "phase": "initial_load"}
+{"t": 9, "event": "alloc", "id": "expert_9", "size": 8388608, "phase": "initial_load"}
+{"t": 10, "event": "alloc", "id": "expert_10", "size": 8388608, "phase": "initial_load"}
+{"t": 11, "event": "alloc", "id": "expert_11", "size": 8388608, "phase": "initial_load"}
+{"t": 12, "event": "alloc", "id": "expert_12", "size": 8388608, "phase": "initial_load"}
+{"t": 13, "event": "alloc", "id": "expert_13", "size": 8388608, "phase": "initial_load"}
+{"t": 14, "event": "alloc", "id": "expert_14", "size": 8388608, "phase": "initial_load"}
+{"t": 15, "event": "alloc", "id": "expert_15", "size": 8388608, "phase": "initial_load"}
+{"t": 16, "event": "alloc", "id": "expert_16", "size": 8388608, "phase": "initial_load"}
+{"t": 17, "event": "alloc", "id": "expert_17", "size": 8388608, "phase": "initial_load"}
+{"t": 18, "event": "alloc", "id": "expert_18", "size": 8388608, "phase": "initial_load"}
+{"t": 19, "event": "alloc", "id": "expert_19", "size": 8388608, "phase": "initial_load"}
+{"t": 20, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 21, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 22, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 23, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 24, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 25, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 26, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 27, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 28, "event": "touch", "id": "expert_4", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 29, "event": "touch", "id": "expert_5", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 30, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 31, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 32, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 33, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 34, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 35, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 36, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 37, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 38, "event": "touch", "id": "expert_6", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 39, "event": "touch", "id": "expert_7", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 40, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 41, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 42, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 43, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 44, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 45, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 46, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 47, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 48, "event": "touch", "id": "expert_8", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 49, "event": "touch", "id": "expert_9", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 50, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 51, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 52, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 53, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 54, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 55, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 56, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 57, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 58, "event": "touch", "id": "expert_10", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 59, "event": "touch", "id": "expert_11", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 60, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 61, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 62, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 63, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 64, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 65, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 66, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 67, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 68, "event": "touch", "id": "expert_12", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 69, "event": "touch", "id": "expert_13", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 70, "event": "free", "id": "expert_4", "phase": "expert_swap"}
+{"t": 71, "event": "alloc", "id": "expert_new_4", "size": 8388608, "phase": "expert_swap"}
+{"t": 72, "event": "touch", "id": "expert_new_4", "mu": 0.15, "sigma": 0.12, "phase": "expert_swap"}
+{"t": 73, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 74, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 75, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 76, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 77, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 78, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 79, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 80, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 81, "event": "touch", "id": "expert_15", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 82, "event": "touch", "id": "expert_16", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 83, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 84, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 85, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 86, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 87, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 88, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 89, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 90, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 91, "event": "touch", "id": "expert_17", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 92, "event": "touch", "id": "expert_18", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 93, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 94, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 95, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 96, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 97, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 98, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 99, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 100, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 101, "event": "touch", "id": "expert_19", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 102, "event": "touch", "id": "expert_new_4", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 103, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 104, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 105, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 106, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 107, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 108, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 109, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 110, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 111, "event": "touch", "id": "expert_5", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 112, "event": "touch", "id": "expert_6", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 113, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 114, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 115, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 116, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 117, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 118, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 119, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 120, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 121, "event": "touch", "id": "expert_7", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 122, "event": "touch", "id": "expert_8", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 123, "event": "free", "id": "expert_5", "phase": "expert_swap"}
+{"t": 124, "event": "alloc", "id": "expert_new_9", "size": 8388608, "phase": "expert_swap"}
+{"t": 125, "event": "touch", "id": "expert_new_9", "mu": 0.15, "sigma": 0.12, "phase": "expert_swap"}
+{"t": 126, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 127, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 128, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 129, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 130, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 131, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 132, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 133, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 134, "event": "touch", "id": "expert_10", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 135, "event": "touch", "id": "expert_11", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 136, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 137, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 138, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 139, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 140, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 141, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 142, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 143, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 144, "event": "touch", "id": "expert_12", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 145, "event": "touch", "id": "expert_13", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 146, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 147, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 148, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 149, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 150, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 151, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 152, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 153, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 154, "event": "touch", "id": "expert_14", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 155, "event": "touch", "id": "expert_15", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 156, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 157, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 158, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 159, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 160, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 161, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 162, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 163, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 164, "event": "touch", "id": "expert_16", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 165, "event": "touch", "id": "expert_17", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 166, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 167, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 168, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 169, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 170, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 171, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 172, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 173, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 174, "event": "touch", "id": "expert_18", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 175, "event": "touch", "id": "expert_19", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 176, "event": "free", "id": "expert_6", "phase": "expert_swap"}
+{"t": 177, "event": "alloc", "id": "expert_new_14", "size": 8388608, "phase": "expert_swap"}
+{"t": 178, "event": "touch", "id": "expert_new_14", "mu": 0.15, "sigma": 0.12, "phase": "expert_swap"}
+{"t": 179, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 180, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 181, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 182, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 183, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 184, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 185, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 186, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 187, "event": "touch", "id": "expert_new_9", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 188, "event": "touch", "id": "expert_new_14", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 189, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 190, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 191, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 192, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 193, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 194, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 195, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 196, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 197, "event": "touch", "id": "expert_7", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 198, "event": "touch", "id": "expert_8", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 199, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 200, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 201, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 202, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 203, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 204, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 205, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 206, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 207, "event": "touch", "id": "expert_9", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 208, "event": "touch", "id": "expert_10", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 209, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 210, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 211, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 212, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 213, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 214, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 215, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 216, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 217, "event": "touch", "id": "expert_11", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 218, "event": "touch", "id": "expert_12", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 219, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 220, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 221, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 222, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 223, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 224, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 225, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 226, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 227, "event": "touch", "id": "expert_13", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 228, "event": "touch", "id": "expert_14", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 229, "event": "free", "id": "expert_7", "phase": "expert_swap"}
+{"t": 230, "event": "alloc", "id": "expert_new_19", "size": 8388608, "phase": "expert_swap"}
+{"t": 231, "event": "touch", "id": "expert_new_19", "mu": 0.15, "sigma": 0.12, "phase": "expert_swap"}
+{"t": 232, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 233, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 234, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 235, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 236, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 237, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 238, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 239, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 240, "event": "touch", "id": "expert_16", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 241, "event": "touch", "id": "expert_17", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 242, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 243, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 244, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 245, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 246, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 247, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 248, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 249, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 250, "event": "touch", "id": "expert_18", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 251, "event": "touch", "id": "expert_19", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 252, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 253, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 254, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 255, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 256, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 257, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 258, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 259, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 260, "event": "touch", "id": "expert_new_4", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 261, "event": "touch", "id": "expert_new_9", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 262, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 263, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 264, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 265, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 266, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 267, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 268, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 269, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 270, "event": "touch", "id": "expert_new_14", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 271, "event": "touch", "id": "expert_new_19", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 272, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 273, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 274, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 275, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 276, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 277, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 278, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 279, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 280, "event": "touch", "id": "expert_8", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 281, "event": "touch", "id": "expert_9", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 282, "event": "free", "id": "expert_8", "phase": "expert_swap"}
+{"t": 283, "event": "alloc", "id": "expert_new_24", "size": 8388608, "phase": "expert_swap"}
+{"t": 284, "event": "touch", "id": "expert_new_24", "mu": 0.15, "sigma": 0.12, "phase": "expert_swap"}
+{"t": 285, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 286, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 287, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 288, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 289, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 290, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 291, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 292, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 293, "event": "touch", "id": "expert_11", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 294, "event": "touch", "id": "expert_12", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 295, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 296, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 297, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 298, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 299, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 300, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 301, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 302, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 303, "event": "touch", "id": "expert_13", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 304, "event": "touch", "id": "expert_14", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 305, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 306, "event": "touch", "id": "expert_0", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 307, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 308, "event": "touch", "id": "expert_1", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 309, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 310, "event": "touch", "id": "expert_2", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 311, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 312, "event": "touch", "id": "expert_3", "mu": 0.9, "sigma": 0.05, "phase": "moe_route"}
+{"t": 313, "event": "touch", "id": "expert_15", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}
+{"t": 314, "event": "touch", "id": "expert_16", "mu": 0.15, "sigma": 0.1, "phase": "moe_route"}

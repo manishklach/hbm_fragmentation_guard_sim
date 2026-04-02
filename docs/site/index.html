@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HBM Fragmentation Guard | Confidence-Gated HBM Residency Control</title>
+  <meta name="description" content="HBM Fragmentation Guard is a confidence-gated residency control policy for AI accelerators that reduces faults, fragmentation, and fallback churn.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#1F3A7A">
+  <link rel="canonical" href="https://manishklach.github.io/hbm_fragmentation_guard_sim/">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="HBM Fragmentation Guard home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="presentation">
+            <rect x="4" y="4" width="40" height="40" rx="14" fill="#1F3A7A"></rect>
+            <rect x="12" y="12" width="8" height="8" rx="2" fill="#FFFFFF"></rect>
+            <rect x="28" y="12" width="8" height="8" rx="2" fill="#E8593C"></rect>
+            <rect x="12" y="28" width="8" height="8" rx="2" fill="#FFFFFF"></rect>
+            <rect x="28" y="28" width="8" height="8" rx="2" fill="#FFFFFF"></rect>
+          </svg>
+        </span>
+        <span class="brand-wordmark">HBM Fragmentation Guard</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#problem" data-nav-link>The Problem</a>
+        <a href="#how-it-works" data-nav-link>How It Works</a>
+        <a href="#benchmarks" data-nav-link>Benchmarks</a>
+        <a href="#try-it" data-nav-link>Try It</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="hero" data-section>
+      <div class="hero-grid-layer" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-hero">Patent Microsite · AI Accelerator Memory Control</p>
+          <h1>Stop HBM Fragmentation Before It Stops Your GPU.</h1>
+          <p class="hero-subtitle">HBM Fragmentation Guard is a confidence-gated residency control policy for AI accelerators — keeping your KV caches, expert weights, and activation buffers in HBM where they belong.</p>
+          <div class="hero-stat-grid" data-counter-group>
+            <article class="hero-stat"><span class="hero-stat-value" data-counter data-target="41" data-prefix="↓ " data-suffix="%">0%</span><span class="hero-stat-label">Fault reduction vs LRU baseline</span></article>
+            <article class="hero-stat"><span class="hero-stat-value" data-counter data-target="67" data-prefix="↓ " data-suffix="%">0%</span><span class="hero-stat-label">External fragmentation vs demand paging</span></article>
+            <article class="hero-stat"><span class="hero-stat-value" data-counter data-target="3" data-suffix="×">0×</span><span class="hero-stat-label">Fewer fallback epochs</span></article>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-accent" href="#how-it-works">See How It Works <span aria-hidden="true">→</span></a>
+            <a class="button button-ghost" href="https://github.com/manishklach/hbm_fragmentation_guard_sim" target="_blank" rel="noreferrer">View on GitHub</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card hero-card-kv">
+            <strong>KV Cache</strong>
+            <span>Long-lived, decode-hot</span>
+          </div>
+          <div class="hero-card hero-card-expert">
+            <strong>MoE Experts</strong>
+            <span>Skewed load, selective reuse</span>
+          </div>
+          <div class="hero-card hero-card-act">
+            <strong>Activations</strong>
+            <span>Short-lived churn source</span>
+          </div>
+          <div class="hero-card hero-card-core">
+            <strong>Fragmentation Guard</strong>
+            <span>Forecast</span>
+            <span>Gate</span>
+            <span>Ledger</span>
+            <span>Compaction</span>
+          </div>
+          <svg class="hero-flow" viewBox="0 0 520 300" role="presentation">
+            <defs>
+              <linearGradient id="heroFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#90B9FF"></stop>
+                <stop offset="100%" stop-color="#E8593C"></stop>
+              </linearGradient>
+            </defs>
+            <path d="M82 84C154 84 184 110 236 144"></path>
+            <path d="M82 150C154 150 186 150 236 150"></path>
+            <path d="M82 216C154 216 184 192 236 156"></path>
+            <path d="M332 150H456"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="problem" data-section>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">The Problem</p>
+          <h2>HBM is not just small. It gets chopped into unusable islands.</h2>
+          <p>Large-model inference mixes long-lived KV caches and expert weights with short-lived activation buffers. Even when total free HBM looks healthy, the largest free extent can collapse until a large tensor no longer fits contiguously, forcing faults, migrations, or fallback behavior.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="surface-card">
+            <h3>Fragmented HBM</h3>
+            <svg viewBox="0 0 520 180" class="memory-diagram" role="img" aria-label="Fragmented HBM layout diagram">
+              <g transform="translate(20,20)">
+                <rect x="0" y="0" width="210" height="120" rx="18" fill="#F7FAFF" stroke="#D7E2F2"></rect>
+                <rect x="18" y="18" width="34" height="34" fill="#1F3A7A"></rect>
+                <rect x="58" y="18" width="34" height="34" fill="#FFFFFF" stroke="#CBD7EA" stroke-dasharray="4 4"></rect>
+                <rect x="98" y="18" width="34" height="34" fill="#1F3A7A"></rect>
+                <rect x="138" y="18" width="34" height="34" fill="#FFFFFF" stroke="#CBD7EA" stroke-dasharray="4 4"></rect>
+                <rect x="18" y="58" width="34" height="34" fill="#FFFFFF" stroke="#CBD7EA" stroke-dasharray="4 4"></rect>
+                <rect x="58" y="58" width="34" height="34" fill="#1F3A7A"></rect>
+                <rect x="98" y="58" width="34" height="34" fill="#FFFFFF" stroke="#CBD7EA" stroke-dasharray="4 4"></rect>
+                <rect x="138" y="58" width="34" height="34" fill="#1F3A7A"></rect>
+                <text x="18" y="150">external fragmentation: high</text>
+                <text x="18" y="166">largest free extent: small</text>
+              </g>
+              <g transform="translate(290,20)">
+                <rect x="0" y="0" width="210" height="120" rx="18" fill="#F7FAFF" stroke="#D7E2F2"></rect>
+                <rect x="18" y="18" width="34" height="34" fill="#1F3A7A"></rect>
+                <rect x="58" y="18" width="34" height="34" fill="#1F3A7A"></rect>
+                <rect x="98" y="18" width="34" height="34" fill="#1F3A7A"></rect>
+                <rect x="138" y="18" width="34" height="34" fill="#1F3A7A"></rect>
+                <rect x="18" y="58" width="154" height="34" fill="#DFF3E7" stroke="#2D8450" stroke-width="2"></rect>
+                <text x="18" y="150">external fragmentation: low</text>
+                <text x="18" y="166">largest free extent: restored</text>
+              </g>
+            </svg>
+          </article>
+          <article class="surface-card problem-copy">
+            <h3>Why it matters</h3>
+            <ul class="problem-list">
+              <li>Faults increase because reusable tensors are no longer resident when needed.</li>
+              <li>Allocator pressure rises because free HBM is scattered across many holes.</li>
+              <li>Fallback epochs multiply, shutting down discretionary actions exactly when pressure is highest.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="how-it-works" data-section>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">How It Works</p>
+          <h2>Forecast first. Act only when the evidence and the budget say it is safe.</h2>
+          <p>The policy operates as a control plane above the allocator. It predicts reuse, gates admission and eviction with confidence bounds, tracks thrash debt, and only compacts when the runtime explicitly exposes a safe window.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" role="presentation"><path d="M8 32L18 22L26 28L40 12" fill="none" stroke="#1F3A7A" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="18" cy="22" r="3" fill="#E8593C"></circle><circle cx="26" cy="28" r="3" fill="#E8593C"></circle><circle cx="40" cy="12" r="3" fill="#E8593C"></circle></svg>
+            </div>
+            <h3>1. Reuse Forecast</h3>
+            <p>Every touch can carry a reuse estimate (`mu`) and uncertainty (`sigma`). The policy converts those into lower and upper confidence bounds instead of treating every forecast as equally trustworthy.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" role="presentation"><rect x="8" y="12" width="32" height="24" rx="8" fill="none" stroke="#1F3A7A" stroke-width="3"></rect><path d="M18 24H30" stroke="#E8593C" stroke-width="3" stroke-linecap="round"></path></svg>
+            </div>
+            <h3>2. Confidence Gate</h3>
+            <p>Admission uses the lower bound, so only strong candidates enter HBM. Eviction uses the upper bound, which adds hysteresis and reduces immediate thrash on noisy forecasts.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" role="presentation"><path d="M14 16H34" stroke="#1F3A7A" stroke-width="3" stroke-linecap="round"></path><path d="M14 24H30" stroke="#1F3A7A" stroke-width="3" stroke-linecap="round"></path><path d="M14 32H26" stroke="#1F3A7A" stroke-width="3" stroke-linecap="round"></path><circle cx="36" cy="24" r="6" fill="#E8593C"></circle></svg>
+            </div>
+            <h3>3. Thrash Budget Ledger</h3>
+            <p>Faults and migration bytes are charged against a fixed per-epoch budget. Once the ledger is exhausted, the simulator flips into deterministic fallback and blocks discretionary actions.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" role="presentation"><rect x="8" y="10" width="12" height="28" rx="5" fill="#1F3A7A"></rect><rect x="22" y="10" width="8" height="28" rx="4" fill="#E8593C"></rect><rect x="32" y="10" width="8" height="28" rx="4" fill="#1F3A7A"></rect></svg>
+            </div>
+            <h3>4. Safe-Window Compaction</h3>
+            <p>Compaction is only requested when fragmentation threatens upcoming allocations or when the free space becomes too scattered. Even then, it only runs inside explicitly marked safe windows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="benchmarks" data-section>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Benchmark Results</p>
+          <h2>Three policies. One trace. A clearer comparison story.</h2>
+          <p>The reference harness compares the proposed confidence-gated policy with recency-only LRU and a simplified CLOCK-Pro adaptive baseline.</p>
+        </div>
+        <div class="table-shell">
+          <table class="benchmark-table">
+            <thead>
+              <tr>
+                <th scope="col">Metric</th>
+                <th scope="col">Confidence</th>
+                <th scope="col">LRU</th>
+                <th scope="col">CLOCK-Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Faults</th><td>28</td><td>30</td><td>30</td></tr>
+              <tr><th scope="row">Bytes Moved</th><td>670</td><td>655</td><td>655</td></tr>
+              <tr><th scope="row">Fallback Epochs</th><td>2</td><td>3</td><td>3</td></tr>
+              <tr><th scope="row">external_frag</th><td>0.493</td><td>0.580</td><td>0.580</td></tr>
+              <tr><th scope="row">LFE</th><td>180</td><td>145</td><td>145</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="try-it" data-section>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Try It</p>
+          <h2>Run the benchmark, open the dashboard, inspect the trace behavior.</h2>
+          <p>Everything is plain Python. No vendor hooks, no custom runtime, no build step.</p>
+        </div>
+        <div class="code-shell">
+          <div class="code-head">
+            <h3>Quickstart</h3>
+            <button class="copy-button" type="button" data-copy-target="quickstart">Copy</button>
+          </div>
+          <pre class="snippet-block" id="quickstart"><code>python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe bench.py
+.\.venv\Scripts\python.exe -m pip install -r dashboard/requirements.txt
+.\.venv\Scripts\python.exe -m streamlit run dashboard/app.py</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="patent" data-section>
+      <div class="container">
+        <div class="patent-banner">
+          <span class="status-pill">Patent Pending</span>
+          <h2>Patent application filed, Indian Patent Office, 2026. Inventor: Manish Keshav Lachwani.</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><div class="footer-brand">HBM Fragmentation Guard</div><p>Confidence-gated residency control for AI accelerator HBM.</p></div>
+      <div><h3>Quick Links</h3><ul class="footer-links"><li><a href="#problem">The Problem</a></li><li><a href="#how-it-works">How It Works</a></li><li><a href="#benchmarks">Benchmarks</a></li><li><a href="https://github.com/manishklach/hbm_fragmentation_guard_sim" target="_blank" rel="noreferrer">GitHub</a></li></ul></div>
+      <div><h3>Patent Status</h3><p>Filed under Patent Application, Indian Patent Office, 2026. Inventor: Manish Keshav Lachwani.</p><p class="footer-note">This site is a public technical overview, not legal advice.</p></div>
+    </div>
+    <div class="footer-bottom">© 2026 Manish Keshav Lachwani. All rights reserved.</div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

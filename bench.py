@@ -1,77 +1,97 @@
 from __future__ import annotations
-import subprocess
-import sys
-import re
+
+import argparse
+import json
+from datetime import datetime, timezone
 from pathlib import Path
 
-PY = sys.executable  # respects venv if activated, otherwise uses current python
+from run_sim import SimulationConfig, load_trace, simulate
 
-SCENARIOS = [
-    ("confidence", "serve", "KV-cache trace"),
-    ("confidence", "demand", "KV-cache trace"),
-    ("lru", "serve", "KV-cache trace"),
-    ("lru", "demand", "KV-cache trace"),
-]
+DEFAULT_TRACE = Path("traces") / "llm_kvcache_growth.jsonl"
+POLICIES = ("confidence", "lru", "clockpro")
 
-TRACE = str(Path("traces") / "llm_kvcache_growth.jsonl")
 
-PATTERNS = {
-    "faults": re.compile(r"Faults:\s+(\d+)"),
-    "migrations": re.compile(r"Migrations:\s+(\d+)"),
-    "bytes_moved": re.compile(r"Bytes moved:\s+(\d+)"),
-    "fallback_epochs": re.compile(r"Fallback epochs:\s+(\d+)"),
-    "blocked_prefetch": re.compile(r"prefetch=(\d+)"),
-    "blocked_evict": re.compile(r"evict=(\d+)"),
-    "blocked_compact": re.compile(r"compact=(\d+)"),
-    "lfe": re.compile(r"Fragmentation: LFE=(\d+)"),
-    "holes": re.compile(r"holes=(\d+)"),
-    "external_frag": re.compile(r"external_frag=([0-9\.]+)"),
-}
+def run_benchmark(trace_path: str | Path = DEFAULT_TRACE) -> dict[str, dict[str, float | int]]:
+    trace_events = load_trace(trace_path)
+    results: dict[str, dict[str, float | int]] = {}
+    for policy in POLICIES:
+        result = simulate(trace_events, policy, SimulationConfig(miss_mode="demand"))
+        results[policy] = result.to_benchmark_row()
+    return results
 
-def run(policy: str, miss: str) -> str:
-    cmd = [PY, "run_sim.py", "--trace", TRACE, "--policy", policy, "--miss-mode", miss]
-    out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, text=True)
-    return out
 
-def parse(out: str):
-    def get(key, default=None):
-        m = PATTERNS[key].search(out)
-        return m.group(1) if m else default
-    return {
-        "faults": int(get("faults", 0)),
-        "migrations": int(get("migrations", 0)),
-        "bytes_moved": int(get("bytes_moved", 0)),
-        "fallback_epochs": int(get("fallback_epochs", 0)),
-        "blocked_prefetch": int(get("blocked_prefetch", 0)),
-        "blocked_evict": int(get("blocked_evict", 0)),
-        "blocked_compact": int(get("blocked_compact", 0)),
-        "lfe": int(get("lfe", 0)),
-        "holes": int(get("holes", 0)),
-        "external_frag": float(get("external_frag", 0.0)),
-    }
+def _format_metric(name: str, value: float | int | None) -> str:
+    if value is None:
+        return "-"
+    if name in {"external_frag", "hot_hit_rate", "cold_hit_rate", "entropy"}:
+        return f"{float(value):.3f}"
+    if name == "bytes_moved":
+        return f"{float(value) / 1e6:.3f} MB"
+    return str(value)
 
-def main():
-    rows=[]
-    for policy, miss, note in SCENARIOS:
-        out = run(policy, miss)
-        m = parse(out)
-        rows.append((policy, miss, m))
 
-    # Print table
-    header = ["policy","miss","faults","migrations","MB_moved","fallback_ep","blocked_pref","LFE","holes","ext_frag"]
-    print("="*110)
-    print("HBM Fragmentation Guard — Benchmark Table (KV-cache trace)")
-    print("="*110)
-    print("{:<10} {:<7} {:>6} {:>10} {:>9} {:>11} {:>12} {:>6} {:>6} {:>8}".format(*header))
-    for policy, miss, m in rows:
-        mb = m["bytes_moved"]/1e6
-        print("{:<10} {:<7} {:>6} {:>10} {:>9.3f} {:>11} {:>12} {:>6} {:>6} {:>8.3f}".format(
-            policy, miss, m["faults"], m["migrations"], mb, m["fallback_epochs"], m["blocked_prefetch"],
-            m["lfe"], m["holes"], m["external_frag"]
-        ))
-    print("="*110)
-    print("Tip: run the fragmentation stressor with --show-map for a visual memory-map demo.")
-    print("  python run_sim.py --trace traces/fragmentation_stressor.jsonl --policy confidence --miss-mode demand --show-map")
+def _print_table(results: dict[str, dict[str, float | int]], trace_path: str | Path):
+    metrics = [
+        ("Faults", "faults"),
+        ("Migrations", "migrations"),
+        ("Bytes moved", "bytes_moved"),
+        ("Fallback epochs", "fallback_epochs"),
+        ("external_frag", "external_frag"),
+        ("LFE", "lfe"),
+        ("Holes", "holes"),
+        ("Entropy", "entropy"),
+        ("Hot hit rate", "hot_hit_rate"),
+        ("Cold hit rate", "cold_hit_rate"),
+        ("Promotions", "promotions"),
+        ("Demotions", "demotions"),
+    ]
+    print("=" * 90)
+    print(f"HBM Fragmentation Guard — Benchmark Table ({trace_path})")
+    print("=" * 90)
+    print(f"{'Metric':<20} {'confidence':>16} {'lru':>16} {'clockpro':>16}")
+    print("-" * 90)
+    for label, key in metrics:
+        values = [_format_metric(key, results[policy].get(key)) for policy in POLICIES]
+        print(f"{label:<20} {values[0]:>16} {values[1]:>16} {values[2]:>16}")
+    print("=" * 90)
+    print(
+        "Tip: use `python run_sim.py --trace traces/fragmentation_stressor.jsonl "
+        "--policy clockpro --show-map` for an ASCII view."
+    )
+
+
+def main(argv: list[str] | None = None):
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--trace", default=str(DEFAULT_TRACE))
+    parser.add_argument("--json", dest="json_path")
+    args = parser.parse_args(argv)
+
+    results = run_benchmark(args.trace)
+    _print_table(results, args.trace)
+
+    if args.json_path:
+        payload = {
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "policies": {
+                policy: {
+                    "faults": int(metrics["faults"]),
+                    "migrations": int(metrics["migrations"]),
+                    "bytes_moved": int(metrics["bytes_moved"]),
+                    "fallback_epochs": int(metrics["fallback_epochs"]),
+                    "external_frag": float(metrics["external_frag"]),
+                    "lfe": int(metrics["lfe"]),
+                    "holes": int(metrics["holes"]),
+                    "entropy": float(metrics["entropy"]),
+                    "hot_hit_rate": float(metrics["hot_hit_rate"]),
+                    "cold_hit_rate": float(metrics["cold_hit_rate"]),
+                    "promotions": int(metrics["promotions"]),
+                    "demotions": int(metrics["demotions"]),
+                }
+                for policy, metrics in results.items()
+            },
+        }
+        Path(args.json_path).write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
 
 if __name__ == "__main__":
     main()

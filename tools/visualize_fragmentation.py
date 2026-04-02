@@ -1,149 +1,119 @@
-"""
-HBM Fragmentation Guard — Visualizer
-
-Generates a simple Matplotlib heatmap showing HBM occupancy over time.
-Safe-window events are marked as horizontal lines.
-
-How to run (recommended, from repo root):
-    python -m tools.visualize_fragmentation --trace traces/fragmentation_stressor.jsonl --out out_fragmentation.png
-
-Notes:
-- This visualizer uses a naive "admit on touch" rule to create an intuitive
-  occupancy/fragmentation picture. Policy benchmarking remains in run_sim.py / bench.py.
-"""
-
 from __future__ import annotations
 
 import argparse
-import json
-import os
 import sys
 from pathlib import Path
 
-# Ensure repo root is on sys.path when running as a script:
-# (python -m tools.visualize_fragmentation already works without this,
-#  but this makes `python tools/visualize_fragmentation.py ...` work too.)
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.animation import FuncAnimation, PillowWriter
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-import numpy as np
-import matplotlib.pyplot as plt
-
-from memory.allocator import ContiguousAllocator
-from memory.fragmentation import compute_metrics
+from run_sim import SimulationConfig, load_trace, simulate
 
 
-def load_trace(path: str):
-    """Yield JSON events from a JSONL file."""
-    with open(path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                yield json.loads(line)
-
-
-def render_state(hbm: ContiguousAllocator, width: int) -> np.ndarray:
-    """
-    Return a 1D occupancy array over HBM address space, binned to 'width'.
-    Uses allocator's internal blocks map (obj_id -> Block).
-    """
-    cap = hbm.capacity
+def render_state(blocks: list[tuple[int, int, str]], capacity: int, width: int) -> np.ndarray:
     bins = np.zeros(width, dtype=np.float32)
-    scale = cap / width
-
-    # ContiguousAllocator stores live allocations in hbm.blocks
-    # where each block has .start and .size
-    for blk in sorted(hbm.blocks.values(), key=lambda b: b.start):
-        start = int(blk.start)
-        size = int(blk.size)
-        a = int(start / scale)
-        b = int((start + size - 1) / scale)
-        a = max(0, min(width - 1, a))
-        b = max(0, min(width - 1, b))
-        bins[a : b + 1] = 1.0
-
+    if capacity <= 0:
+        return bins
+    scale = capacity / width
+    for start, size, _ in blocks:
+        left = int(start / scale)
+        right = int((start + size - 1) / scale)
+        left = max(0, min(width - 1, left))
+        right = max(0, min(width - 1, right))
+        bins[left : right + 1] = 1.0
     return bins
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--trace", required=True, help="Path to JSONL trace")
-    ap.add_argument("--out", default="out_fragmentation.png", help="Output image file")
-    ap.add_argument("--capacity", type=int, default=800, help="HBM capacity (bytes/units)")
-    ap.add_argument("--width", type=int, default=140, help="Heatmap width (bins)")
-    ap.add_argument("--every", type=int, default=1, help="Record every N events")
-    args = ap.parse_args()
+def build_heatmap(result, width: int, stride: int = 1) -> np.ndarray:
+    frames = [
+        render_state(point.blocks, result.config.capacity, width)
+        for point in result.timeline[::stride]
+    ]
+    return np.stack(frames, axis=0) if frames else np.zeros((1, width), dtype=np.float32)
 
-    trace_path = Path(args.trace)
-    if not trace_path.exists():
-        raise SystemExit(f"Trace not found: {trace_path}")
 
-    hbm = ContiguousAllocator(args.capacity)
+def save_static_figure(results, out_path: Path, width: int, fmt: str):
+    figure, axes = plt.subplots(1, len(results), figsize=(12, 4.8), squeeze=False)
+    axes = axes[0]
+    max_value = 1.0
+    for axis, (policy, result) in zip(axes, results.items()):
+        heatmap = build_heatmap(result, width)
+        axis.imshow(heatmap, aspect="auto", interpolation="nearest", vmin=0, vmax=max_value)
+        axis.set_title(f"HBM Occupancy Heatmap ({policy})")
+        axis.set_xlabel("HBM address (binned)")
+        axis.set_ylabel("time")
+    figure.tight_layout()
+    figure.savefig(out_path, dpi=220, format=fmt)
 
-    # catalog sizes (objects exist in "system memory" regardless of residency)
-    obj_size: dict[str, int] = {}
 
-    frames: list[np.ndarray] = []
-    safe_marks: list[int] = []
-
-    i = 0
-    for ev in load_trace(str(trace_path)):
-        i += 1
-        et = ev.get("event")
-
-        if et == "alloc":
-            obj_size[str(ev["id"])] = int(ev["size"])
-
-        elif et == "free":
-            oid = str(ev["id"])
-            obj_size.pop(oid, None)
-            if hbm.in_mem(oid):
-                hbm.free(oid)
-
-        elif et == "touch":
-            # For visualization we "admit on touch" to show fragmentation evolution.
-            oid = str(ev["id"])
-            sz = int(obj_size.get(oid, 20))
-            if not hbm.in_mem(oid):
-                try:
-                    hbm.alloc(oid, sz)
-                except Exception:
-                    # In a visualizer we tolerate allocation failures quietly.
-                    pass
-
-        elif et == "safe_window":
-            # mark current frame index (where the line will be drawn)
-            safe_marks.append(len(frames))
-
-        if args.every <= 1 or (i % args.every == 0):
-            frames.append(render_state(hbm, args.width))
-
-    if not frames:
-        raise SystemExit("No frames captured. Check trace path and --every.")
-
-    H = np.stack(frames, axis=0)  # (time, width)
-
-    fig = plt.figure(figsize=(10.5, 4.6))
-    ax = fig.add_subplot(111)
-    ax.imshow(H, aspect="auto", interpolation="nearest")
-    ax.set_title("HBM Occupancy Heatmap (Trace-driven)")
-    ax.set_xlabel("HBM address (binned)")
-    ax.set_ylabel("time (frames)")
-
-    for t in safe_marks:
-        ax.axhline(t, linewidth=1)
-
-    m = compute_metrics(hbm.extents_free())
-    caption = (
-        f"Final fragmentation: LFE={m.lfe}, holes={m.hole_count}, "
-        f"external_frag={m.external_frag:.3f}, entropy={m.entropy:.3f}"
+def save_animation(result, out_path: Path, width: int):
+    figure, axis = plt.subplots(figsize=(10.5, 4.6))
+    frames = [
+        render_state(point.blocks, result.config.capacity, width)
+        for point in result.timeline[::10]
+    ]
+    image = axis.imshow(
+        np.expand_dims(frames[0], axis=0),
+        aspect="auto",
+        interpolation="nearest",
+        vmin=0,
+        vmax=1.0,
     )
-    fig.text(0.01, 0.01, caption, fontsize=9)
+    axis.set_title(f"HBM Occupancy Animation ({result.policy})")
+    axis.set_xlabel("HBM address (binned)")
+    axis.set_ylabel("frame")
 
-    fig.tight_layout()
+    def update(frame_index: int):
+        image.set_data(np.expand_dims(frames[frame_index], axis=0))
+        axis.set_ylabel(f"frame {frame_index}")
+        return [image]
+
+    animation = FuncAnimation(figure, update, frames=len(frames), interval=180, blit=True)
+    animation.save(out_path, writer=PillowWriter(fps=5))
+
+
+def main(argv: list[str] | None = None):
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--trace", required=True, help="Path to JSONL trace")
+    parser.add_argument("--out", default="out_fragmentation.png", help="Output path")
+    parser.add_argument("--capacity", type=int, default=800, help="HBM capacity")
+    parser.add_argument("--width", type=int, default=140, help="Heatmap width (bins)")
+    parser.add_argument("--every", type=int, default=1, help="Record every N timeline points")
+    parser.add_argument("--policy", choices=["confidence", "lru", "clockpro"], default="confidence")
+    parser.add_argument(
+        "--compare",
+        action="store_true",
+        help="Render confidence and lru side-by-side",
+    )
+    parser.add_argument("--animate", action="store_true", help="Export an animated GIF")
+    parser.add_argument("--format", choices=["png", "svg", "gif", "pdf"], default="png")
+    args = parser.parse_args(argv)
+
+    if args.compare and args.animate:
+        raise SystemExit("--compare and --animate cannot be combined in the current visualizer.")
+
+    trace = load_trace(args.trace)
+    config = SimulationConfig(miss_mode="demand", capacity=args.capacity)
+
+    if args.compare:
+        results = {
+            "confidence": simulate(trace, "confidence", config),
+            "lru": simulate(trace, "lru", config),
+        }
+    else:
+        results = {args.policy: simulate(trace, args.policy, config)}
+
     out_path = Path(args.out)
-    fig.savefig(str(out_path), dpi=220)
+    if args.animate or args.format == "gif":
+        result = next(iter(results.values()))
+        save_animation(result, out_path, args.width)
+    else:
+        save_static_figure(results, out_path, args.width, args.format)
     print(f"Wrote: {out_path.resolve()}")
 
 

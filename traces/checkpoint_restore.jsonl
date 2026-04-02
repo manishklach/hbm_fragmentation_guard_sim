@@ -1,0 +1,273 @@
+{"t": 0, "event": "alloc", "id": "param_0", "size": 4194304, "phase": "training"}
+{"t": 1, "event": "touch", "id": "param_0", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 2, "event": "alloc", "id": "param_1", "size": 4194304, "phase": "training"}
+{"t": 3, "event": "touch", "id": "param_1", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 4, "event": "alloc", "id": "param_2", "size": 4194304, "phase": "training"}
+{"t": 5, "event": "touch", "id": "param_2", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 6, "event": "alloc", "id": "param_3", "size": 4194304, "phase": "training"}
+{"t": 7, "event": "touch", "id": "param_3", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 8, "event": "alloc", "id": "param_4", "size": 4194304, "phase": "training"}
+{"t": 9, "event": "touch", "id": "param_4", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 10, "event": "alloc", "id": "param_5", "size": 4194304, "phase": "training"}
+{"t": 11, "event": "touch", "id": "param_5", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 12, "event": "alloc", "id": "param_6", "size": 4194304, "phase": "training"}
+{"t": 13, "event": "touch", "id": "param_6", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 14, "event": "alloc", "id": "param_7", "size": 4194304, "phase": "training"}
+{"t": 15, "event": "touch", "id": "param_7", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 16, "event": "alloc", "id": "param_8", "size": 4194304, "phase": "training"}
+{"t": 17, "event": "touch", "id": "param_8", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 18, "event": "alloc", "id": "param_9", "size": 4194304, "phase": "training"}
+{"t": 19, "event": "touch", "id": "param_9", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 20, "event": "alloc", "id": "param_10", "size": 4194304, "phase": "training"}
+{"t": 21, "event": "touch", "id": "param_10", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 22, "event": "alloc", "id": "param_11", "size": 4194304, "phase": "training"}
+{"t": 23, "event": "touch", "id": "param_11", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 24, "event": "alloc", "id": "param_12", "size": 4194304, "phase": "training"}
+{"t": 25, "event": "touch", "id": "param_12", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 26, "event": "alloc", "id": "param_13", "size": 4194304, "phase": "training"}
+{"t": 27, "event": "touch", "id": "param_13", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 28, "event": "alloc", "id": "param_14", "size": 4194304, "phase": "training"}
+{"t": 29, "event": "touch", "id": "param_14", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 30, "event": "alloc", "id": "param_15", "size": 4194304, "phase": "training"}
+{"t": 31, "event": "touch", "id": "param_15", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 32, "event": "alloc", "id": "param_16", "size": 4194304, "phase": "training"}
+{"t": 33, "event": "touch", "id": "param_16", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 34, "event": "alloc", "id": "param_17", "size": 4194304, "phase": "training"}
+{"t": 35, "event": "touch", "id": "param_17", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 36, "event": "alloc", "id": "param_18", "size": 4194304, "phase": "training"}
+{"t": 37, "event": "touch", "id": "param_18", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 38, "event": "alloc", "id": "param_19", "size": 4194304, "phase": "training"}
+{"t": 39, "event": "touch", "id": "param_19", "mu": 0.65, "sigma": 0.1, "phase": "training"}
+{"t": 40, "event": "alloc", "id": "act_0", "size": 2097152, "phase": "training"}
+{"t": 41, "event": "touch", "id": "act_0", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 42, "event": "alloc", "id": "act_1", "size": 2097152, "phase": "training"}
+{"t": 43, "event": "touch", "id": "act_1", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 44, "event": "alloc", "id": "act_2", "size": 2097152, "phase": "training"}
+{"t": 45, "event": "touch", "id": "act_2", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 46, "event": "alloc", "id": "act_3", "size": 2097152, "phase": "training"}
+{"t": 47, "event": "touch", "id": "act_3", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 48, "event": "alloc", "id": "act_4", "size": 2097152, "phase": "training"}
+{"t": 49, "event": "touch", "id": "act_4", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 50, "event": "alloc", "id": "act_5", "size": 2097152, "phase": "training"}
+{"t": 51, "event": "touch", "id": "act_5", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 52, "event": "alloc", "id": "act_6", "size": 2097152, "phase": "training"}
+{"t": 53, "event": "touch", "id": "act_6", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 54, "event": "alloc", "id": "act_7", "size": 2097152, "phase": "training"}
+{"t": 55, "event": "touch", "id": "act_7", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 56, "event": "alloc", "id": "act_8", "size": 2097152, "phase": "training"}
+{"t": 57, "event": "touch", "id": "act_8", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 58, "event": "alloc", "id": "act_9", "size": 2097152, "phase": "training"}
+{"t": 59, "event": "touch", "id": "act_9", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 60, "event": "alloc", "id": "act_10", "size": 2097152, "phase": "training"}
+{"t": 61, "event": "touch", "id": "act_10", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 62, "event": "alloc", "id": "act_11", "size": 2097152, "phase": "training"}
+{"t": 63, "event": "touch", "id": "act_11", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 64, "event": "alloc", "id": "act_12", "size": 2097152, "phase": "training"}
+{"t": 65, "event": "touch", "id": "act_12", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 66, "event": "alloc", "id": "act_13", "size": 2097152, "phase": "training"}
+{"t": 67, "event": "touch", "id": "act_13", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 68, "event": "alloc", "id": "act_14", "size": 2097152, "phase": "training"}
+{"t": 69, "event": "touch", "id": "act_14", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 70, "event": "alloc", "id": "act_15", "size": 2097152, "phase": "training"}
+{"t": 71, "event": "touch", "id": "act_15", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 72, "event": "alloc", "id": "act_16", "size": 2097152, "phase": "training"}
+{"t": 73, "event": "touch", "id": "act_16", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 74, "event": "alloc", "id": "act_17", "size": 2097152, "phase": "training"}
+{"t": 75, "event": "touch", "id": "act_17", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 76, "event": "alloc", "id": "act_18", "size": 2097152, "phase": "training"}
+{"t": 77, "event": "touch", "id": "act_18", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 78, "event": "alloc", "id": "act_19", "size": 2097152, "phase": "training"}
+{"t": 79, "event": "touch", "id": "act_19", "mu": 0.45, "sigma": 0.12, "phase": "training"}
+{"t": 80, "event": "free", "id": "act_0", "phase": "training"}
+{"t": 81, "event": "free", "id": "act_1", "phase": "training"}
+{"t": 82, "event": "free", "id": "act_2", "phase": "training"}
+{"t": 83, "event": "free", "id": "act_3", "phase": "training"}
+{"t": 84, "event": "free", "id": "act_4", "phase": "training"}
+{"t": 85, "event": "free", "id": "act_5", "phase": "training"}
+{"t": 86, "event": "free", "id": "act_6", "phase": "training"}
+{"t": 87, "event": "free", "id": "act_7", "phase": "training"}
+{"t": 88, "event": "free", "id": "act_8", "phase": "training"}
+{"t": 89, "event": "free", "id": "act_9", "phase": "training"}
+{"t": 90, "event": "safe_window", "phase": "training_to_save"}
+{"t": 91, "event": "touch", "id": "param_0", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 92, "event": "touch", "id": "param_1", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 93, "event": "touch", "id": "param_2", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 94, "event": "touch", "id": "param_3", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 95, "event": "touch", "id": "param_4", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 96, "event": "touch", "id": "param_5", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 97, "event": "touch", "id": "param_6", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 98, "event": "touch", "id": "param_7", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 99, "event": "touch", "id": "param_8", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 100, "event": "touch", "id": "param_9", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 101, "event": "touch", "id": "param_10", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 102, "event": "touch", "id": "param_11", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 103, "event": "touch", "id": "param_12", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 104, "event": "touch", "id": "param_13", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 105, "event": "touch", "id": "param_14", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 106, "event": "touch", "id": "param_15", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 107, "event": "touch", "id": "param_16", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 108, "event": "touch", "id": "param_17", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 109, "event": "touch", "id": "param_18", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 110, "event": "touch", "id": "param_19", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 111, "event": "touch", "id": "act_10", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 112, "event": "touch", "id": "act_11", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 113, "event": "touch", "id": "act_12", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 114, "event": "touch", "id": "act_13", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 115, "event": "touch", "id": "act_14", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 116, "event": "touch", "id": "act_15", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 117, "event": "touch", "id": "act_16", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 118, "event": "touch", "id": "act_17", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 119, "event": "touch", "id": "act_18", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 120, "event": "touch", "id": "act_19", "mu": 0.1, "sigma": 0.05, "phase": "checkpoint_save"}
+{"t": 121, "event": "free", "id": "param_0", "phase": "checkpoint_save"}
+{"t": 122, "event": "free", "id": "param_1", "phase": "checkpoint_save"}
+{"t": 123, "event": "free", "id": "param_2", "phase": "checkpoint_save"}
+{"t": 124, "event": "free", "id": "param_3", "phase": "checkpoint_save"}
+{"t": 125, "event": "free", "id": "param_4", "phase": "checkpoint_save"}
+{"t": 126, "event": "free", "id": "param_5", "phase": "checkpoint_save"}
+{"t": 127, "event": "free", "id": "param_6", "phase": "checkpoint_save"}
+{"t": 128, "event": "free", "id": "param_7", "phase": "checkpoint_save"}
+{"t": 129, "event": "free", "id": "param_8", "phase": "checkpoint_save"}
+{"t": 130, "event": "free", "id": "param_9", "phase": "checkpoint_save"}
+{"t": 131, "event": "free", "id": "param_10", "phase": "checkpoint_save"}
+{"t": 132, "event": "free", "id": "param_11", "phase": "checkpoint_save"}
+{"t": 133, "event": "free", "id": "param_12", "phase": "checkpoint_save"}
+{"t": 134, "event": "free", "id": "param_13", "phase": "checkpoint_save"}
+{"t": 135, "event": "free", "id": "param_14", "phase": "checkpoint_save"}
+{"t": 136, "event": "free", "id": "param_15", "phase": "checkpoint_save"}
+{"t": 137, "event": "free", "id": "param_16", "phase": "checkpoint_save"}
+{"t": 138, "event": "free", "id": "param_17", "phase": "checkpoint_save"}
+{"t": 139, "event": "free", "id": "param_18", "phase": "checkpoint_save"}
+{"t": 140, "event": "free", "id": "param_19", "phase": "checkpoint_save"}
+{"t": 141, "event": "free", "id": "act_10", "phase": "checkpoint_save"}
+{"t": 142, "event": "free", "id": "act_11", "phase": "checkpoint_save"}
+{"t": 143, "event": "free", "id": "act_12", "phase": "checkpoint_save"}
+{"t": 144, "event": "free", "id": "act_13", "phase": "checkpoint_save"}
+{"t": 145, "event": "free", "id": "act_14", "phase": "checkpoint_save"}
+{"t": 146, "event": "free", "id": "act_15", "phase": "checkpoint_save"}
+{"t": 147, "event": "free", "id": "act_16", "phase": "checkpoint_save"}
+{"t": 148, "event": "free", "id": "act_17", "phase": "checkpoint_save"}
+{"t": 149, "event": "free", "id": "act_18", "phase": "checkpoint_save"}
+{"t": 150, "event": "free", "id": "act_19", "phase": "checkpoint_save"}
+{"t": 151, "event": "safe_window", "phase": "save_to_restore"}
+{"t": 152, "event": "alloc", "id": "param_0", "size": 4194304, "phase": "restore"}
+{"t": 153, "event": "touch", "id": "param_0", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 154, "event": "alloc", "id": "param_1", "size": 4194304, "phase": "restore"}
+{"t": 155, "event": "touch", "id": "param_1", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 156, "event": "alloc", "id": "param_2", "size": 4194304, "phase": "restore"}
+{"t": 157, "event": "touch", "id": "param_2", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 158, "event": "alloc", "id": "param_3", "size": 4194304, "phase": "restore"}
+{"t": 159, "event": "touch", "id": "param_3", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 160, "event": "alloc", "id": "param_4", "size": 4194304, "phase": "restore"}
+{"t": 161, "event": "touch", "id": "param_4", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 162, "event": "alloc", "id": "param_5", "size": 4194304, "phase": "restore"}
+{"t": 163, "event": "touch", "id": "param_5", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 164, "event": "alloc", "id": "param_6", "size": 4194304, "phase": "restore"}
+{"t": 165, "event": "touch", "id": "param_6", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 166, "event": "alloc", "id": "param_7", "size": 4194304, "phase": "restore"}
+{"t": 167, "event": "touch", "id": "param_7", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 168, "event": "alloc", "id": "param_8", "size": 4194304, "phase": "restore"}
+{"t": 169, "event": "touch", "id": "param_8", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 170, "event": "alloc", "id": "param_9", "size": 4194304, "phase": "restore"}
+{"t": 171, "event": "touch", "id": "param_9", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 172, "event": "alloc", "id": "param_10", "size": 4194304, "phase": "restore"}
+{"t": 173, "event": "touch", "id": "param_10", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 174, "event": "alloc", "id": "param_11", "size": 4194304, "phase": "restore"}
+{"t": 175, "event": "touch", "id": "param_11", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 176, "event": "alloc", "id": "param_12", "size": 4194304, "phase": "restore"}
+{"t": 177, "event": "touch", "id": "param_12", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 178, "event": "alloc", "id": "param_13", "size": 4194304, "phase": "restore"}
+{"t": 179, "event": "touch", "id": "param_13", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 180, "event": "alloc", "id": "param_14", "size": 4194304, "phase": "restore"}
+{"t": 181, "event": "touch", "id": "param_14", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 182, "event": "alloc", "id": "param_15", "size": 4194304, "phase": "restore"}
+{"t": 183, "event": "touch", "id": "param_15", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 184, "event": "alloc", "id": "param_16", "size": 4194304, "phase": "restore"}
+{"t": 185, "event": "touch", "id": "param_16", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 186, "event": "alloc", "id": "param_17", "size": 4194304, "phase": "restore"}
+{"t": 187, "event": "touch", "id": "param_17", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 188, "event": "alloc", "id": "param_18", "size": 4194304, "phase": "restore"}
+{"t": 189, "event": "touch", "id": "param_18", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 190, "event": "alloc", "id": "param_19", "size": 4194304, "phase": "restore"}
+{"t": 191, "event": "touch", "id": "param_19", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 192, "event": "alloc", "id": "act_10", "size": 2097152, "phase": "restore"}
+{"t": 193, "event": "touch", "id": "act_10", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 194, "event": "alloc", "id": "act_11", "size": 2097152, "phase": "restore"}
+{"t": 195, "event": "touch", "id": "act_11", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 196, "event": "alloc", "id": "act_12", "size": 2097152, "phase": "restore"}
+{"t": 197, "event": "touch", "id": "act_12", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 198, "event": "alloc", "id": "act_13", "size": 2097152, "phase": "restore"}
+{"t": 199, "event": "touch", "id": "act_13", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 200, "event": "alloc", "id": "act_14", "size": 2097152, "phase": "restore"}
+{"t": 201, "event": "touch", "id": "act_14", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 202, "event": "alloc", "id": "act_15", "size": 2097152, "phase": "restore"}
+{"t": 203, "event": "touch", "id": "act_15", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 204, "event": "alloc", "id": "act_16", "size": 2097152, "phase": "restore"}
+{"t": 205, "event": "touch", "id": "act_16", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 206, "event": "alloc", "id": "act_17", "size": 2097152, "phase": "restore"}
+{"t": 207, "event": "touch", "id": "act_17", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 208, "event": "alloc", "id": "act_18", "size": 2097152, "phase": "restore"}
+{"t": 209, "event": "touch", "id": "act_18", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 210, "event": "alloc", "id": "act_19", "size": 2097152, "phase": "restore"}
+{"t": 211, "event": "touch", "id": "act_19", "mu": 0.9, "sigma": 0.05, "phase": "restore"}
+{"t": 212, "event": "safe_window", "phase": "restore_to_resume"}
+{"t": 213, "event": "touch", "id": "param_0", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 214, "event": "touch", "id": "param_1", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 215, "event": "touch", "id": "param_2", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 216, "event": "touch", "id": "param_3", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 217, "event": "touch", "id": "param_4", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 218, "event": "touch", "id": "param_5", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 219, "event": "touch", "id": "param_6", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 220, "event": "touch", "id": "param_7", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 221, "event": "touch", "id": "param_8", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 222, "event": "touch", "id": "param_9", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 223, "event": "touch", "id": "param_10", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 224, "event": "touch", "id": "param_11", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 225, "event": "touch", "id": "param_12", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 226, "event": "touch", "id": "param_13", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 227, "event": "touch", "id": "param_14", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 228, "event": "touch", "id": "param_15", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 229, "event": "touch", "id": "param_16", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 230, "event": "touch", "id": "param_17", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 231, "event": "touch", "id": "param_18", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 232, "event": "touch", "id": "param_19", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 233, "event": "touch", "id": "act_10", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 234, "event": "touch", "id": "act_11", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 235, "event": "touch", "id": "act_12", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 236, "event": "touch", "id": "act_13", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 237, "event": "touch", "id": "act_14", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 238, "event": "touch", "id": "act_15", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 239, "event": "touch", "id": "act_16", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 240, "event": "touch", "id": "act_17", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 241, "event": "touch", "id": "act_18", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 242, "event": "touch", "id": "act_19", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 243, "event": "touch", "id": "param_0", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 244, "event": "touch", "id": "param_1", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 245, "event": "touch", "id": "param_2", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 246, "event": "touch", "id": "param_3", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 247, "event": "touch", "id": "param_4", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 248, "event": "touch", "id": "param_5", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 249, "event": "touch", "id": "param_6", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 250, "event": "touch", "id": "param_7", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 251, "event": "touch", "id": "param_8", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 252, "event": "touch", "id": "param_9", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 253, "event": "touch", "id": "param_10", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 254, "event": "touch", "id": "param_11", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 255, "event": "touch", "id": "param_12", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 256, "event": "touch", "id": "param_13", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 257, "event": "touch", "id": "param_14", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 258, "event": "touch", "id": "param_15", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 259, "event": "touch", "id": "param_16", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 260, "event": "touch", "id": "param_17", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 261, "event": "touch", "id": "param_18", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 262, "event": "touch", "id": "param_19", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 263, "event": "touch", "id": "act_10", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 264, "event": "touch", "id": "act_11", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 265, "event": "touch", "id": "act_12", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 266, "event": "touch", "id": "act_13", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 267, "event": "touch", "id": "act_14", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 268, "event": "touch", "id": "act_15", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 269, "event": "touch", "id": "act_16", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 270, "event": "touch", "id": "act_17", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 271, "event": "touch", "id": "act_18", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}
+{"t": 272, "event": "touch", "id": "act_19", "mu": 0.65, "sigma": 0.1, "phase": "resume_training"}

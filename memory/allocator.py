@@ -2,6 +2,15 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Tuple
 
+
+class AllocationError(RuntimeError):
+    """Raised when a strict allocation request cannot be satisfied."""
+
+
+class DoubleFreeError(KeyError):
+    """Raised when a strict free targets a non-resident object."""
+
+
 @dataclass
 class Block:
     start: int
@@ -24,6 +33,16 @@ class ContiguousAllocator:
 
     def free(self, obj_id: str):
         self.blocks.pop(obj_id, None)
+
+    def alloc_or_raise(self, obj_id: str, size: int):
+        if not self.alloc(obj_id, size):
+            msg = f"insufficient contiguous capacity for {obj_id!r} ({size} bytes)"
+            raise AllocationError(msg)
+
+    def free_or_raise(self, obj_id: str):
+        if obj_id not in self.blocks:
+            raise DoubleFreeError(f"object {obj_id!r} is not resident")
+        self.free(obj_id)
 
     def in_mem(self, obj_id: str) -> bool:
         return obj_id in self.blocks

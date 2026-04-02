@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-04-02T10:24:45.217671+00:00",
+  "policies": {
+    "confidence": {
+      "faults": 28,
+      "migrations": 22,
+      "bytes_moved": 670,
+      "fallback_epochs": 2,
+      "external_frag": 0.49295774647887325,
+      "lfe": 180,
+      "holes": 7,
+      "entropy": 2.242919184663866,
+      "hot_hit_rate": 0.0,
+      "cold_hit_rate": 0.0,
+      "promotions": 0,
+      "demotions": 0
+    },
+    "lru": {
+      "faults": 30,
+      "migrations": 22,
+      "bytes_moved": 655,
+      "fallback_epochs": 3,
+      "external_frag": 0.5797101449275363,
+      "lfe": 145,
+      "holes": 8,
+      "entropy": 2.5757915197493224,
+      "hot_hit_rate": 0.0,
+      "cold_hit_rate": 0.0,
+      "promotions": 0,
+      "demotions": 0
+    },
+    "clockpro": {
+      "faults": 30,
+      "migrations": 22,
+      "bytes_moved": 655,
+      "fallback_epochs": 3,
+      "external_frag": 0.5797101449275363,
+      "lfe": 145,
+      "holes": 8,
+      "entropy": 2.5757915197493224,
+      "hot_hit_rate": 0.3,
+      "cold_hit_rate": 0.7,
+      "promotions": 7,
+      "demotions": 0
+    }
+  }
+}
