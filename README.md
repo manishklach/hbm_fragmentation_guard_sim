@@ -1,4 +1,4 @@
-# HBM Fragmentation Guard — Reference Control Simulator (v3.2)
+# HBM Fragmentation Guard — Reference Control Simulator (v3.3)
 
 A **reference simulator + benchmark harness** for evaluating HBM residency-control policies and fragmentation behavior.
 It is intentionally hardware-agnostic: no proprietary hooks required.

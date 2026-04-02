@@ -1,5 +1,12 @@
 # Changelog
 
+## v3.3
+- Added the CLOCK-Pro adaptive baseline and exposed policy-specific benchmark metrics.
+- Refactored the simulator around a reusable `simulate()` API while preserving the CLI.
+- Added a full pytest suite, packaging metadata, benchmark regression baseline, and richer CI workflows.
+- Added a Streamlit dashboard, four new workload traces, enhanced fragmentation/timeline visualizers, and a GitHub Pages microsite.
+- Added a long-form technical blog post with structured metadata, canonical tags, Open Graph tags, and sitemap entries for SEO.
+
 ## v3.2
 - Added Matplotlib visualizer (tools/visualize_fragmentation.py).
 - Added synthetic LLM telemetry mocks (workloads/llama3_70b_inference_mock.jsonl).
