@@ -27,10 +27,20 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp -R docs/site/. _site/
+          cp -R blog _site/blog
+          mkdir -p _site/docs
+          cp -R docs/img _site/docs/img
+          cp DISCLAIMER.md _site/DISCLAIMER.md
+          cp robots.txt _site/robots.txt
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/site
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment

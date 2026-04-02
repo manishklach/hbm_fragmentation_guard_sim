@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manishklach.github.io/hbm_fragmentation_guard_sim/sitemap.xml
+Sitemap: https://manishklach.github.io/hbm_fragmentation_guard_sim/blog/sitemap-blog.xml
